@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "findutils-",
 	"suffix": ".tar.xz",
-	"link": "https://ftp.gnu.org/gnu/findutils/findutils-4.9.0.tar.xz",
-	"version": "4.9.0",
+	"link": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+	"version": "4.10.0",
 	"files": null,
 	"dependencies": null
 }

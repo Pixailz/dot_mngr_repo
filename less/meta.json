@@ -3,8 +3,8 @@
 	"type": "website",
 	"prefix": "less-",
 	"suffix": ".tar.gz",
-	"link": "https://www.greenwoodsoftware.com/less/less-643.tar.gz",
-	"version": "643",
+	"link": "https://www.greenwoodsoftware.com/less/less-661.tar.gz",
+	"version": "661",
 	"files": null,
 	"dependencies": {
 		"required": [

@@ -3,8 +3,8 @@
 	"type": "github_tag",
 	"prefix": "e2fsprogs-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.0.tar.gz",
-	"version": "1.47.0",
+	"link": "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.1.tar.gz",
+	"version": "1.47.1",
 	"files": null,
 	"dependencies": null
 }

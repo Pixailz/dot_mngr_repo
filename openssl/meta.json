@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "openssl-",
 	"suffix": ".tar.gz",
-	"link": "https://www.openssl.org/source/openssl-3.3.0.tar.gz",
-	"version": "3.3.0",
+	"link": "https://www.openssl.org/source/openssl-3.0.14.tar.gz",
+	"version": "3.0.14",
 	"files": null,
 	"dependencies": null
 }
