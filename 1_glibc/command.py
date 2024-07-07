@@ -3,6 +3,11 @@
 from dot_mngr import *
 
 def configure(self):
+	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_env({
+		"LC_ALL": "POSIX",
+		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+	})
 	self.apply_patch("glibc-2.39-fhs-1", "-Np1")
 	self.take_build()
 	self.cmd_run(
@@ -20,9 +25,6 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make", 1)
 
-def check(self):
-	pass
-
 def install(self):
 	self.cmd_run(
 		f'make DESTDIR="{PREFIX}" install && '
@@ -30,6 +32,3 @@ def install(self):
 	)
 	self.cmd_run("echo 'int main(){}' | " f'"{TARGET_TRIPLET}-gcc" -xc -')
 	self.cmd_run("readelf -l a.out | grep ld-linux; rm -rf a.out")
-
-def uninstall(self):
-	pass

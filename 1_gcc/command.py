@@ -3,7 +3,11 @@
 from dot_mngr import *
 
 def configure(self):
-	self.cmd_run("echo ${PATH}")
+	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_env({
+		"LC_ALL": "POSIX",
+		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+	})
 	extract_file_from_package("1_mpfr", self.tar_folder)
 	extract_file_from_package("1_gmp", self.tar_folder)
 	extract_file_from_package("1_mpc", self.tar_folder)
@@ -19,7 +23,7 @@ def configure(self):
 
 	self.take_build()
 	self.cmd_run(
-		f"../configure"
+		 "../configure"
 		f" --target={TARGET_TRIPLET}"
 		f" --prefix={PREFIX}/tools"
 		f" --with-glibc-version={get_version_from_package('1_glibc')}"
@@ -44,17 +48,11 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	pass
-
 def install(self):
 	self.cmd_run("make install")
-	os.chdir(self.tar_folder)
+	self.take_tar_folder()
 	self.cmd_run(
 		 "cat gcc/limitx.h gcc/glimits.h gcc/limity.h >"
 		f" \"$(dirname \"$(\"{TARGET_TRIPLET}-gcc\" -print-libgcc-file-name)\")\""
 		 "/include/limits.h"
 	)
-
-def uninstall(self):
-	pass

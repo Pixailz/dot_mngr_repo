@@ -1,0 +1,13 @@
+{
+	"value": "https://ftp.gnu.org/gnu/readline",
+	"type": "apache",
+	"prefix": "readline-",
+	"suffix": ".tar.gz",
+	"link": "https://ftp.gnu.org/gnu/readline/readline-8.2.tar.gz",
+	"version": "8.2",
+	"patchs": {
+		"readline-8.2-upstream_fixes-3": "https://www.linuxfromscratch.org/patches/lfs/12.1/readline-8.2-upstream_fixes-3.patch"
+	},
+	"files": null,
+	"dependencies": null
+}

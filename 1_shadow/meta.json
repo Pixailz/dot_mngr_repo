@@ -1,0 +1,10 @@
+{
+	"value": "shadow-maint/shadow",
+	"type": "github",
+	"prefix": "shadow-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/shadow-maint/shadow/releases/download/4.16.0/shadow-4.16.0.tar.gz",
+	"version": "4.16.0",
+	"files": null,
+	"dependencies": null
+}

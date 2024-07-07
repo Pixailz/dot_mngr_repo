@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.1.tar.gz",
 	"version": "4.2.1",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

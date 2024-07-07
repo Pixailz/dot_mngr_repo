@@ -1,0 +1,11 @@
+{
+	"value": "https://fossies.org/linux/misc/xz",
+	"type": "fossies",
+	"prefix": "xz-",
+	"suffix": ".tar.xz",
+	"link": "https://fossies.org/linux/misc/xz-5.4.7.tar.xz",
+	"version": "5.4.7",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}
