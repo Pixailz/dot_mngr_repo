@@ -3,12 +3,9 @@
 from dot_mngr import *
 
 def configure(self):
+	self.download_patch("sysvinit-3.08-consolidated-1")
 	self.chroot()
-	self.cmd_run(
-		 "./configure --prefix=/usr"
-		 " --enable-shared"
-		 " --without-ensurepip"
-	)
+	self.apply_patch("sysvinit-3.08-consolidated-1", "-Np1")
 
 def compile(self):
 	self.cmd_run("make")

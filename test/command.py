@@ -4,6 +4,8 @@ from dot_mngr import *
 
 def configure(self):
 	p.info("pass")
+	self.chroot()
+	p.info(f"{TARGET_TRIPLET = }")
 	# self.add_path(f"{PREFIX}/tools/bin")
 	# self.add_env({
 	# 	"LC_ALL": "POSIX",
