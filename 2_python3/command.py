@@ -21,9 +21,10 @@ def install(self):
 	self.cmd_run(f"install -v -dm755 /usr/share/doc/python-{self.version}/html")
 	python3_doc = get_package_from_name("1_python3-doc")
 	python3_doc.prepare_tarball(chroot=self.chrooted)
-	doc_folder = f"/sources/{python3_doc.name}/{os.path.basename(python3_doc.tar_folder)}"
-	self.cmd_run(f"tar --no-same-owner -xvf /sources/{python3_doc.file_name}")
+	tar_file = self.chrooted_get_path(python3_doc.file_path, self.chrooted)
+	self.cmd_run(f"tar --no-same-owner -xvf {tar_file}")
 	self.cmd_run(
-		f"cp -R --no-preserve=mode {doc_folder}/*"
+		f"cp -R --no-preserve=mode {os.path.basename(python3_doc.tar_folder)}/*"
 		f" /usr/share/doc/python-{self.version}/html"
 	)
+#

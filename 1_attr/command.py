@@ -9,7 +9,7 @@ def configure(self):
 		 " --prefix=/usr"
 		 " --disable-static"
 		f" --sysconfdir=/etc"
-		f" --docdir={PREFIX}/share/doc/attr-{self.version}"
+		f" --docdir=/usr/share/doc/attr-{self.version}"
 	)
 
 def compile(self):

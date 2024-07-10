@@ -76,7 +76,7 @@ def install(self):
 		 " /usr/share/man/man5/systemd.link.5 > /usr/share/man/man5/udev.link.5"
 	)
 	self.cmd_run(
-		 "sed 's/systemd\(\\\\\?-\)/udev\\1/' /usr/share/man/man8/systemd-hwdb.8"
+		 "sed 's/systemd\\(\\\\\\?-\\)/udev\\1/' /usr/share/man/man8/systemd-hwdb.8"
 		 " > /usr/share/man/man8/udev-hwdb.8"
 	)
 	self.cmd_run(

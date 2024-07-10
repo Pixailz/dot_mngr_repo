@@ -13,7 +13,7 @@ def download_patchs(self):
 def apply_patchs(self):
 	if self.version != "5.2.21":
 		return
-	for i in range(22, 26):
+	for i in range(22, 27):
 		self.apply_patch(f"bash52-0{i}", "-p0")
 	self.version = "5.2.26"
 

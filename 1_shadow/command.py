@@ -5,9 +5,9 @@ from dot_mngr import *
 def configure(self):
 	self.chroot()
 	self.cmd_run("sed -i 's/groups$(EXEEXT) //' src/Makefile.in")
-	self.cmd_run("find man -name Makefile.in -exec sed -i 's/groups\.1 / /'   {} \;")
-	self.cmd_run("find man -name Makefile.in -exec sed -i 's/getspnam\.3 / /' {} \;")
-	self.cmd_run("find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \;")
+	self.cmd_run("find man -name Makefile.in -exec sed -i 's/groups\\.1 / /'   {} \\;")
+	self.cmd_run("find man -name Makefile.in -exec sed -i 's/getspnam\\.3 / /' {} \\;")
+	self.cmd_run("find man -name Makefile.in -exec sed -i 's/passwd\\.5 / /'   {} \\;")
 	self.cmd_run(
 		 "sed -e 's:#ENCRYPT_METHOD DES:ENCRYPT_METHOD YESCRYPT:'"
 		 " -e 's:/var/spool/mail:/var/mail:'"
