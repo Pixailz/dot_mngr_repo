@@ -18,7 +18,7 @@ def install(self):
 	self.cmd_run(
 		 "make PREFIX=/usr install && "
 		 "cp -av libbz2.so.* /usr/lib && "
-		f"ln -fsv libbz2.so.${self.version} /usr/lib/libbz2.so && "
+		f"ln -fsv libbz2.so.{self.version} /usr/lib/libbz2.so && "
 	 	 "cp -v bzip2-shared /usr/bin/bzip2 && "
 		 "for i in /usr/bin/{bzcat,bunzip2}; do ln -sfv bzip2 $i; done && "
 		 "rm -fv /usr/lib/libbz2.a"

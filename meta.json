@@ -1,5 +1,5 @@
 {
-	"last_checked": 1720328277.200668,
+	"last_checked": 1720791732.759007,
 	"packages": [
 		"1_binutils",
 		"1_gcc",
@@ -116,7 +116,6 @@
 		"1_udev",
 		"1_udev-lfs",
 		"1_sysklogd",
-		"1_sysvinit",
-		"test"
+		"1_sysvinit"
 	]
 }
