@@ -1,0 +1,8 @@
+{
+	"reference": "main@openldap",
+	"dependencies": {
+		"required": [
+			"1_cyrus-sasl"
+		]
+	}
+}

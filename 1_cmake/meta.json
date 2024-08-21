@@ -1,0 +1,11 @@
+{
+	"reference": "main@cmake",
+	"dependencies": {
+		"required": [
+			"1_curl",
+			"1_libarchive",
+			"1_libuv",
+			"1_nghttp2"
+		]
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"reference": "main@gpgme",
+	"dependencies": {
+		"required": [
+			"1_libassuan"
+		]
+	}
+}

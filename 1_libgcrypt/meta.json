@@ -1,0 +1,8 @@
+{
+	"reference": "main@libgcrypt",
+	"dependencies": {
+		"required": [
+			"1_libgpg-error"
+		]
+	}
+}

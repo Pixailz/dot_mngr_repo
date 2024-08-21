@@ -1,0 +1,12 @@
+{
+	"reference": "main@gnutls",
+	"dependencies": {
+		"required": [
+			"1_nettle",
+			"1_make-ca",
+			"1_libunistring",
+			"1_libtasn1",
+			"1_p11-kit"
+		]
+	}
+}

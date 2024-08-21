@@ -1,0 +1,9 @@
+{
+	"reference": "main@lvm2",
+	"dependencies": {
+		"required": [
+			"1_lvm2-kernel",
+			"1_libaio"
+		]
+	}
+}

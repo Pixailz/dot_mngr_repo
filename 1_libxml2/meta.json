@@ -1,0 +1,8 @@
+{
+	"reference": "main@libxml2",
+	"dependencies": {
+		"required": [
+			"1_icu"
+		]
+	}
+}

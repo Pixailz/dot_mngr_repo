@@ -1,0 +1,9 @@
+{
+	"reference": "main@pinentry",
+	"dependencies": {
+		"required": [
+			"1_libassuan",
+			"1_libgpg-error"
+		]
+	}
+}

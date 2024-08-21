@@ -1,0 +1,8 @@
+{
+	"reference": "main@libksba",
+	"dependencies": {
+		"required": [
+			"1_libgpg-error"
+		]
+	}
+}

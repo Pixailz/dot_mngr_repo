@@ -1,0 +1,10 @@
+{
+	"reference": "main@curl",
+	"dependencies": {
+		"required": [
+			"1_libpsl",
+			"1_make-ca",
+			"2_make-ca"
+		]
+	}
+}

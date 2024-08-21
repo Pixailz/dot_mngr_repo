@@ -1,0 +1,8 @@
+{
+	"reference": "main@make-ca",
+	"dependencies": {
+		"required": [
+			"1_p11-kit"
+		]
+	}
+}

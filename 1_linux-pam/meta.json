@@ -1,0 +1,8 @@
+{
+	"reference": "main@linux-pam",
+	"dependencies": {
+		"required":[
+			"1_linux-pam_doc"
+		]
+	}
+}

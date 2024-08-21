@@ -1,0 +1,10 @@
+{
+	"reference": "main@cryptsetup",
+	"dependencies": {
+		"required": [
+			"1_json-c",
+			"1_lvm2",
+			"1_popt"
+		]
+	}
+}

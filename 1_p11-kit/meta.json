@@ -1,0 +1,9 @@
+{
+	"reference": "main@p11-kit",
+	"dependencies": {
+		"required": [
+			"1_libtasn1",
+			"2_make-ca"
+		]
+	}
+}

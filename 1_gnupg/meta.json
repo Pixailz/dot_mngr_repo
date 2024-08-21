@@ -1,0 +1,14 @@
+{
+	"reference": "main@gnupg",
+	"dependencies": {
+		"required": [
+			"1_libassuan",
+			"1_libgcrypt",
+			"1_libksba",
+			"1_npth",
+			"1_openldap",
+			"1_gnutls",
+			"1_pinentry"
+		]
+	}
+}

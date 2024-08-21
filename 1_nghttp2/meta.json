@@ -1,0 +1,8 @@
+{
+	"reference": "main@nghttp2",
+	"dependencies": {
+		"required": [
+			"1_libxml2"
+		]
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"reference": "main@libpsl",
+	"dependencies": {
+		"required": [
+			"1_libidn2",
+			"1_libunistring"
+		]
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"reference": "main@libidn2",
+	"dependencies": {
+		"required": [
+			"1_libunistring"
+		]
+	}
+}

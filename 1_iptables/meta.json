@@ -1,0 +1,8 @@
+{
+	"reference": "main@iptables",
+	"dependencies": {
+		"required": [
+			"1_iptables-kernel"
+		]
+	}
+}
