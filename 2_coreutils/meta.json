@@ -1,13 +1,4 @@
 {
-	"value": "https://ftp.gnu.org/gnu/coreutils",
-	"type": "apache",
-	"prefix": "coreutils-",
-	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.5.tar.gz",
-	"version": "9.5",
-	"patchs": {
-		"coreutils-9.5-i18n-1": "https://www.linuxfromscratch.org/patches/lfs/development/coreutils-9.5-i18n-2.patch"
-	},
-	"files": null,
+	"reference": "main@coreutils",
 	"dependencies": null
 }

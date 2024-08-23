@@ -1,11 +1,4 @@
 {
-	"value": "https://distfiles.ariadne.space/pkgconf",
-	"type": "apache_no_sort",
-	"prefix": "pkgconf-",
-	"suffix": ".tar.gz",
-	"link": "https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.gz",
-	"version": "2.3.0",
-	"patchs": null,
-	"files": null,
+	"reference": "main@pkgconf",
 	"dependencies": null
 }

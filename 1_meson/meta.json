@@ -1,11 +1,4 @@
 {
-	"value": "mesonbuild/meson",
-	"type": "github",
-	"prefix": "meson-",
-	"suffix": ".tar.gz",
-	"link": "https://github.com/mesonbuild/meson/releases/download/1.5.1/meson-1.5.1.tar.gz",
-	"version": "1.5.1",
-	"patchs": null,
-	"files": null,
+	"reference": "main@meson",
 	"dependencies": null
 }

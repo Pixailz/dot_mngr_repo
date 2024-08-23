@@ -1,11 +1,4 @@
 {
-	"value": "https://invisible-mirror.net/archives/ncurses",
-	"type": "apache",
-	"prefix": "ncurses-",
-	"suffix": ".tar.gz",
-	"link": "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz",
-	"version": "6.5",
-	"patchs": null,
-	"files": null,
+	"reference": "main@ncurses",
 	"dependencies": null
 }

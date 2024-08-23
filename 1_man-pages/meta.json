@@ -1,11 +1,4 @@
 {
-	"value": "https://mirrors.edge.kernel.org/pub/linux/docs/man-pages",
-	"type": "apache_no_sort",
-	"prefix": "man-pages-",
-	"suffix": ".tar.gz",
-	"link": "https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/man-pages-6.9.1.tar.gz",
-	"version": "6.9.1",
-	"patchs": null,
-	"files": null,
+	"reference": "main@man-pages",
 	"dependencies": null
 }

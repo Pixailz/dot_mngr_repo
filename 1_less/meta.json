@@ -1,16 +1,4 @@
 {
-	"value": "https://www.greenwoodsoftware.com/less/download.html",
-	"type": "website",
-	"prefix": "less-",
-	"suffix": ".tar.gz",
-	"link": "https://www.greenwoodsoftware.com/less/less-661.tar.gz",
-	"version": "661",
-	"patchs": null,
-	"files": null,
-	"dependencies": {
-		"required": [
-			"glibc",
-			"ncurses"
-		]
-	}
+	"reference": "main@less",
+	"dependencies": null
 }

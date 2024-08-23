@@ -1,11 +1,4 @@
 {
-	"value": "https://ftp.gnu.org/gnu/gperf",
-	"type": "apache",
-	"prefix": "gperf-",
-	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
-	"version": "3.1",
-	"patchs": null,
-	"files": null,
+	"reference": "main@gperf",
 	"dependencies": null
 }

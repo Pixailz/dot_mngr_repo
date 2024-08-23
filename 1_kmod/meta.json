@@ -1,11 +1,4 @@
 {
-	"value": "https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kmod",
-	"type": "apache_no_sort",
-	"prefix": "kmod-",
-	"suffix": ".tar.gz",
-	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kmod/kmod-33.tar.gz",
-	"version": "33",
-	"patchs": null,
-	"files": null,
+	"reference": "main@kmod",
 	"dependencies": null
 }

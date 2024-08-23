@@ -1,11 +1,4 @@
 {
-	"value": "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz",
-	"type": "no_scrap",
-	"prefix": "udev-lfs-",
-	"suffix": ".tar.xz",
-	"link": "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz",
-	"version": "20230818",
-	"patchs": null,
-	"files": null,
+	"reference": "main@udev-lfs",
 	"dependencies": null
 }

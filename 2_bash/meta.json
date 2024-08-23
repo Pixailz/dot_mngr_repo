@@ -1,11 +1,4 @@
 {
-	"value": "https://ftp.gnu.org/gnu/bash",
-	"type": "apache",
-	"prefix": "bash-",
-	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/bash/bash-5.2.32.tar.gz",
-	"version": "5.2.32",
-	"patchs": null,
-	"files": null,
+	"reference": "main@bash",
 	"dependencies": null
 }

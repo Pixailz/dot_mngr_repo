@@ -1,11 +1,4 @@
 {
-	"value": "https://ftp.gnu.org/gnu/gcc",
-	"type": "apache_dir",
-	"prefix": "gcc-",
-	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.gz",
-	"version": "14.2.0",
-	"patchs": null,
-	"files": null,
+	"reference": "main@gcc",
 	"dependencies": null
 }

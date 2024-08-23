@@ -1,11 +1,4 @@
 {
-	"value": "https://www.cpan.org/src",
-	"type": "apache",
-	"prefix": "perl-",
-	"suffix": ".tar.gz",
-	"link": "https://www.cpan.org/src/5.0/perl-5.40.0.tar.gz",
-	"version": "5.40.0",
-	"patchs": null,
-	"files": null,
+	"reference": "main@perl",
 	"dependencies": null
 }
