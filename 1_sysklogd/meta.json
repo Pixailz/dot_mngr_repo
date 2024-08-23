@@ -1,10 +1,11 @@
 {
-	"value": "https://www.infodrom.org/projects/sysklogd/download",
-	"type": "apache",
+	"value": "troglobit/sysklogd",
+	"type": "github",
 	"prefix": "sysklogd-",
 	"suffix": ".tar.gz",
-	"link": "https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz",
-	"version": "1.5.1",
+	"link": "https://github.com/troglobit/sysklogd/releases/download/v2.6.1/sysklogd-2.6.1.tar.gz",
+	"version": "2.6.1",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

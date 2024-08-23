@@ -14,8 +14,6 @@ def configure(self):
 		 " --with-browser=/usr/bin/lynx"
 		 " --with-vgrind=/usr/bin/vgrind"
 		 " --with-grap=/usr/bin/grap"
-		 " --with-systemdtmpfilesdir="
-		 " --with-systemdsystemunitdir="
 	)
 
 def compile(self):

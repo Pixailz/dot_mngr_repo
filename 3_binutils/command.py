@@ -15,6 +15,7 @@ def configure(self):
 		 " --enable-shared"
 		 " --disable-werror"
 		 " --enable-64-bit-bfd"
+		 " --enable-new-dtags"
 		 " --with-system-zlib"
 		 " --enable-default-hash-style=gnu"
 	)
@@ -22,8 +23,8 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make tooldir=/usr")
 
-# def check(self):
-# 	self.cmd_run("make -k check")
+def check(self):
+	self.cmd_run("make -k check")
 
 def install(self):
 	self.cmd_run(f"make tooldir=/usr install")

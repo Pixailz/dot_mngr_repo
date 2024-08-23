@@ -13,7 +13,6 @@ def configure(self):
 		 " --without-normal"
 		 " --with-cxx-shared"
 		 " --enable-pc-files"
-		 " --enable-widec"
 		 " --with-pkg-config-libdir=/usr/lib/pkgconfig"
 	)
 
@@ -22,8 +21,8 @@ def compile(self):
 
 def install(self):
 	self.cmd_run('make DESTDIR="${PWD}/dest" install')
-	self.cmd_run("install -vm755 dest/usr/lib/libncursesw.so.6.4 /usr/lib")
-	self.cmd_run("rm -v  dest/usr/lib/libncursesw.so.6.4")
+	self.cmd_run(f"install -vm755 dest/usr/lib/libncursesw.so.{self.version} /usr/lib")
+	self.cmd_run(f"rm -v  dest/usr/lib/libncursesw.so.{self.version}")
 	self.cmd_run("sed -e 's/^#if.*XOPEN.*$/#if 1/' -i dest/usr/include/curses.h")
 	self.cmd_run("cp -av dest/* /")
 	self.cmd_run(

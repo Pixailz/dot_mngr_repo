@@ -1,10 +1,10 @@
 {
-	"value": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.gz",
-	"type": "no_scrap",
+	"value": "https://ftp.gnu.org/gnu/coreutils",
+	"type": "apache",
 	"prefix": "coreutils-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.gz",
-	"version": "9.4",
+	"link": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.5.tar.gz",
+	"version": "9.5",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

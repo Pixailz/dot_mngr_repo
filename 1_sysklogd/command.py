@@ -4,11 +4,16 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	self.cmd_run("sed -i '/Error loading kernel symbols/{n;n;d}' ksym_mod.c")
-	self.cmd_run("sed -i 's/union wait/int/' syslogd.c")
+	self.cmd_run(
+		 "./configure"
+		 " --prefix=/usr"
+		 " --sysconfdir=/etc"
+		 " --runstatedir=/run"
+		 " --without-logger"
+	)
 
 def compile(self):
 	self.cmd_run("make")
 
 def install(self):
-	self.cmd_run("make BINDIR=/sbin install")
+	self.cmd_run("make install")

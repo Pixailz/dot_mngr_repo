@@ -17,6 +17,7 @@ def configure(self):
 		 " --enable-languages=c,c++"
 		 " --enable-default-pie"
 		 " --enable-default-ssp"
+		 " --enable-host-pie"
 		 " --disable-multilib"
 		 " --disable-bootstrap"
 		 " --disable-fixincludes"
@@ -26,12 +27,20 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-# def check(self):
-# 	self.cmd_run(
-# 		 "ulimit -s 32768 && ulimit -f 1000000 && chown -R tester . &&"
-# 		 " su tester -c 'PATH=${PATH} make -k check || true"
-# 	)
-# 	self.cmd_run("../contrib/test_summary | grep -A7 Summ | grep -v '^#'")
+def check(self):
+	self.cmd_run("ulimit -s 32768 && ulimit -f 1000000")
+	self.cmd_run("sed -e '/cpython/d' -i ../gcc/testsuite/gcc.dg/plugin/plugin.exp")
+	self.cmd_run("sed -e 's/no-pic /&-no-pie /' -i ../gcc/testsuite/gcc.target/i386/pr113689-1.c")
+	self.cmd_run("sed -e 's/300000/(1|300000)/' -i ../libgomp/testsuite/libgomp.c-c++-common/pr109062.c")
+	self.cmd_run(
+		 "sed -e 's/{ target nonpic } //' "
+		 " -e '/GOTPCREL/d' -i ../gcc/testsuite/gcc.target/i386/fentryname3.c"
+	)
+	self.cmd_run(
+		 "chown -R tester . &&"
+		 " su tester -c 'PATH=${PATH} make -k check || true"
+	)
+	self.cmd_run("../contrib/test_summary | grep -A7 Summ | grep -v '^#'")
 
 def install(self):
 	self.cmd_run("make install")

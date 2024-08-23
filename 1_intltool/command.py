@@ -4,7 +4,7 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	self.cmd_run("sed -i 's:\\${:\\$\\{:' intltool-update.in")
+	self.cmd_run("sed -i 's:\\\\\\${:\\\\\\$\\\\{:' intltool-update.in")
 	self.cmd_run(
 		 "./configure"
 		 " --prefix=/usr"

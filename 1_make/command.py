@@ -11,9 +11,9 @@ def configure(self):
 	self.cmd_run(
 		 "./configure"
 		 " --prefix=/usr"
+		 " --without-guile"
 		f' --host="{TARGET_TRIPLET}"'
 		 ' --build="$(build-aux/config.guess)"'
-		 " --without-guile"
 	)
 
 def compile(self):

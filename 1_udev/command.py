@@ -10,23 +10,18 @@ def configure(self):
 		 "sed -i -e 's/GROUP=\"render\"/GROUP=\"video\"/'"
 		 " -e 's/GROUP=\"sgx\", //' rules.d/50-udev-default.rules.in"
 	)
-	self.cmd_run(
-		 "./configure"
-		 " --prefix=/usr"
-	)
 	self.cmd_run("sed '/systemd-sysctl/s/^/#/' -i rules.d/99-systemd.rules.in")
 	self.cmd_run("sed '/NETWORK_DIRS/s/systemd/udev/' -i src/basic/path-lookup.h")
 	self.take_build()
 	self.cmd_run(
-		 "meson setup"
+		 "meson setup .."
 		 " --prefix=/usr"
 		 " --buildtype=release"
-		 " -Dmode=release"
-		 " -Ddev-kvm-mode=0660"
-		 " -Dlink-udev-shared=false"
-		 " -Dlogind=false"
-		 " -Dvconsole=false"
-		 " .."
+		 " -D mode=release"
+		 " -D dev-kvm-mode=0660"
+		 " -D link-udev-shared=false"
+		 " -D logind=false"
+		 " -D vconsole=false"
 	)
 
 def compile(self):

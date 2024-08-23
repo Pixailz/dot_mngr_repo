@@ -5,6 +5,7 @@
 	"suffix": ".tar.xz",
 	"link": "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz",
 	"version": "20230818",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

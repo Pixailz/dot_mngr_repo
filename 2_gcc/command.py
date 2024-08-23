@@ -30,8 +30,7 @@ def configure(self):
 		 ' --build="$(../config.guess)"'
 		f" --host={TARGET_TRIPLET}"
 		f" --target={TARGET_TRIPLET}"
-		 ' LDFLAGS_FOR_TARGET="-L${PWD}'
-		f'/{TARGET_TRIPLET}/libgcc"'
+		f' LDFLAGS_FOR_TARGET="-L{self.tar_folder}/build/{TARGET_TRIPLET}/libgcc"'
 		 " --prefix=/usr"
 		f" --with-build-sysroot={PREFIX}"
 		 " --enable-default-pie"

@@ -4,6 +4,10 @@ from dot_mngr import *
 
 def configure(self):
 	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_env({
+		"LC_ALL": "POSIX",
+		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+	})
 	self.take_build()
 	self.cmd_run(
 		 "../configure"
@@ -11,8 +15,9 @@ def configure(self):
 		f" --with-sysroot={PREFIX}"
 		f" --target={TARGET_TRIPLET}"
 		 " --disable-nls"
-		 " --disable-werror"
 		 " --enable-gprofng=no"
+		 " --disable-werror"
+		 " --enable-new-dtags"
 		 " --enable-default-hash-style=gnu", 1
 	)
 

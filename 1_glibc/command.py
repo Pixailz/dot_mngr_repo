@@ -8,10 +8,10 @@ def configure(self):
 		"LC_ALL": "POSIX",
 		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
 	})
-	self.apply_patch("glibc-2.39-fhs-1", "-Np1")
+	self.apply_patch("glibc-2.40-fhs-1", "-Np1")
 	self.take_build()
+	self.cmd_run("echo 'rootsbindir=/usr/sbin' > configparms")
 	self.cmd_run(
-		 "echo 'rootsbindir=/usr/sbin' > configparms &&"
 		 " ../configure"
 		 " --prefix=/usr"
 		f" --host={TARGET_TRIPLET}"

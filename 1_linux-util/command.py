@@ -17,6 +17,7 @@ def configure(self):
         " --disable-runuser"
         " --disable-pylibmount"
         " --disable-static"
+		" --disable-liblastlog2"
         " --without-python"
         " ADJTIME_PATH=/var/lib/hwclock/adjtime"
        f" --docdir=/usr/share/doc/util-linux-{self.version}"

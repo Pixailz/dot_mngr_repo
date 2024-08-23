@@ -3,8 +3,9 @@
 	"type": "github_tag",
 	"prefix": "ninja-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.11.1.tar.gz",
-	"version": "1.11.1",
+	"link": "https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz",
+	"version": "1.12.1",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

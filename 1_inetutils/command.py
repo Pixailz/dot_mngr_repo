@@ -4,7 +4,8 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	self.cmd_run("echo '#define PATH_PROCNET_DEV \"/proc/net/dev\"' >> ifconfig/system/linux.h")
+	# self.cmd_run("echo '#define PATH_PROCNET_DEV \"/proc/net/dev\"' >> ifconfig/system/linux.h")
+	self.cmd_run("sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c")
 	self.cmd_run(
 		 "./configure"
 		 " --prefix=/usr"

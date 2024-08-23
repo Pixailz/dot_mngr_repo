@@ -29,7 +29,6 @@ def configure(self):
 		 " --without-debug"
 		 " --without-ada"
 		 " --disable-stripping"
-		 " --enable-widec"
 	)
 
 def compile(self):

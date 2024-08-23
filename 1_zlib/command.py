@@ -4,7 +4,10 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	self.cmd_run("./configure --prefix=/usr")
+	self.cmd_run(
+		 "./configure"
+		 " --prefix=/usr"
+	)
 
 def compile(self):
 	self.cmd_run("make")

@@ -3,8 +3,9 @@
 	"type": "github_tag",
 	"prefix": "wheel-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/pypa/wheel/archive/refs/tags/0.43.0.tar.gz",
-	"version": "0.43.0",
+	"link": "https://github.com/pypa/wheel/archive/refs/tags/0.44.0.tar.gz",
+	"version": "0.44.0",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

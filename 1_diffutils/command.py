@@ -9,9 +9,10 @@ def configure(self):
 		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
 	})
 	self.cmd_run(
-		 "./configure --prefix=/usr"
+		 "./configure"
+		 " --prefix=/usr"
 		f" --host={TARGET_TRIPLET}"
-		 ' --build="$(build-aux/config.guess)"'
+		 ' --build="$(./build-aux/config.guess)"'
 	)
 
 def compile(self):

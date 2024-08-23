@@ -8,8 +8,8 @@ def configure(self):
 		"LC_ALL": "POSIX",
 		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
 	})
+	self.cmd_run("sed '6009s/$add_dir//' -i ltmain.sh")
 	self.take_build()
-	self.cmd_run("sed '6009s/$add_dir//' -i ../ltmain.sh")
 	self.cmd_run(
 		 "../configure"
 		 " --prefix=/usr"
@@ -20,6 +20,7 @@ def configure(self):
 		 " --enable-gprofng=no"
 		 " --disable-werror"
 		 " --enable-64-bit-bfd"
+		 " --enable-new-dtags"
 		 " --enable-default-hash-style=gnu"
 	)
 

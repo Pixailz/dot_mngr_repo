@@ -12,6 +12,7 @@ def configure(self):
 		 " --with-xz"
 		 " --with-zstd"
 		 " --with-zlib"
+         " --disable-manpages"
 	)
 
 def compile(self):
@@ -22,6 +23,7 @@ def install(self):
 	self.cmd_run(
 		 "for target in depmod insmod modinfo modprobe rmmod; do"
 		 " ln -sfv ../bin/kmod /usr/sbin/$target;"
+		 " rm -fv /usr/bin/$target;"
 		 " done"
 	)
 	self.cmd_run("ln -sfv kmod /usr/bin/lsmod")

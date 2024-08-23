@@ -3,10 +3,10 @@
 from dot_mngr import *
 
 def configure(self):
-	self.download_patch("glibc-2.39-fhs-1")
+	self.download_patch("glibc-2.40-fhs-1")
 	download_package(self, "1_tzdata")
 	self.chroot()
-	self.apply_patch("glibc-2.39-fhs-1", "-Np1")
+	self.apply_patch("glibc-2.40-fhs-1", "-Np1")
 	self.take_build()
 	self.cmd_run(
 		 "echo 'rootsbindir=/usr/sbin' > configparms &&"
@@ -28,13 +28,13 @@ def compile(self):
 def install(self):
 	self.cmd_run(
 		 "touch /etc/ld.so.conf &&"
-		 " sed '/test-installation/s@\\$(PERL)@echo not running@' -i ../Makefile &&"
+		 " sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile &&"
 		 " make install &&"
 		 " sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd &&"
 		 " mkdir -pv /usr/lib/locale &&"
-		 " localedef -i C      -f UTF-8       C.UTF-8 &&"
-		 " localedef -i cs_CZ  -f UTF-8       cs_CZ.UTF-8 &&"
-		 " localedef -i de_DE  -f ISO-8859-1  de_DE &&"
+		 " localedef -i C -f UTF-8 C.UTF-8 &&"
+		 " localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8 &&"
+		 " localedef -i de_DE -f ISO-8859-1 de_DE &&"
 		 " localedef -i de_DE@euro -f ISO-8859-15 de_DE@euro &&"
 		 " localedef -i de_DE -f UTF-8 de_DE.UTF-8 &&"
 		 " localedef -i el_GR -f ISO-8859-7 el_GR &&"

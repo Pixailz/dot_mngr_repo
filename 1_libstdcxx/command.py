@@ -24,8 +24,8 @@ def compile(self):
 	self.cmd_run("make")
 
 def install(self):
+	self.cmd_run(f'make DESTDIR="{PREFIX}" install')
 	self.cmd_run(
-		f'make DESTDIR="{PREFIX}" install &&'
 		f' rm -rf "{PREFIX}/usr/lib/lib"'
 		 "{stdc++{,exp,fs},supc++}.la"
 	)

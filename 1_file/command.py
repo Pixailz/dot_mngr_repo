@@ -28,7 +28,5 @@ def compile(self):
 	self.cmd_run(f'make FILE_COMPILE={self.tar_folder}/build/src/file')
 
 def install(self):
-	self.cmd_run(
-		f'make DESTDIR="{PREFIX}" install &&'
-		f" rm -rf {PREFIX}/usr/lib/libmagic.la"
-	)
+	self.cmd_run(f'make DESTDIR="{PREFIX}" install')
+	self.cmd_run(f"rm -rf {PREFIX}/usr/lib/libmagic.la")

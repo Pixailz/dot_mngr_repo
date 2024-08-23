@@ -7,8 +7,8 @@ def configure(self):
 	self.cmd_run(
 		 "./configure"
 		 " --prefix=/usr"
-		 " --disable-static"
 		f" --docdir=/usr/share/doc/flex-{self.version}"
+		 " --disable-static"
 	)
 
 def compile(self):

@@ -5,6 +5,7 @@
 	"suffix": ".tar.xz",
 	"link": "https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz",
 	"version": "1.14.10",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

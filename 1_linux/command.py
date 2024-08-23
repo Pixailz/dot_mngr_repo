@@ -39,27 +39,44 @@ def configure(self):
 	kernel.config("IKHEADERS", "n")
 	kernel.config("CGROUPS", "y")
 	kernel.config("MEMCG", "y")
+	kernel.config("GROUP_SCHED", "y")
+	kernel.config("RT_GROUP_SCHED", "n")
 	kernel.config("EXPERT", "n")
 
 	kernel.config("RELOCATABLE", "y")
-	kernel.config("RANDOMISE_BASE", "y")
+	kernel.config("RANDOMIZE_BASE", "y")
 
 	kernel.config("STACKPROTECTOR", "y")
 	kernel.config("STACKPROTECTOR_STRONG", "y")
+
+	kernel.config("NET", "y")
+	kernel.config("INET", "y")
+	kernel.config("IPV6", "y")
 
 	kernel.config("UEVENT_HELPER", "n")
 	kernel.config("DEVTMPFS", "y")
 	kernel.config("DEVTMPFS_MOUNT", "y")
 
+	kernel.config("FW_LOADER", "y")
+	kernel.config("FW_LOADER_USER_HELPER", "n")
+	kernel.config("DMIID", "y")
+
 	kernel.config("DRM", "y")
 	kernel.config("DRM_FBDEV_EMULATION", "y")
 	kernel.config("FRAMEBUFFER_CONSOLE", "y")
+
+	kernel.config("INOTIFY_USER", "y")
+	kernel.config("TMPFS", "y")
+	kernel.config("TMPFS_POSIX_ACL", "y")
 
 	kernel.config("X86_X2APIC", "y")
 	kernel.config("PCI", "y")
 	kernel.config("PCI_MSI", "y")
 	kernel.config("IOMMU_SUPPORT", "y")
 	kernel.config("IRQ_REMAP", "y")
+
+	kernel.config("HIGHMEM64G", "y")
+	kernel.config("BLK_DEV_NVME", "y")
 
 	self.localversion = os.getenv("DISTRO_CODENAME")
 	self.vmlinuz = os.getenv("VMLINUZ")

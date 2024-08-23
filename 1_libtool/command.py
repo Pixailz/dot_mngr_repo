@@ -12,8 +12,8 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-# def check(self):
-# 	self.cmd_run("make check")
+def check(self):
+	self.cmd_run("make -k check")
 
 def install(self):
 	self.cmd_run("make install")

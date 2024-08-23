@@ -13,7 +13,6 @@ def configure(self):
 		 " sh Configure -des"
 		 " -Dprefix=/usr"
 		 " -Dvendorprefix=/usr"
-		 " -Duseshrplib"
 		f" -Dprivlib=/usr/lib/perl5/{short_ver}/core_perl"
 		f" -Darchlib=/usr/lib/perl5/{short_ver}/core_perl"
 		f" -Dsitelib=/usr/lib/perl5/{short_ver}/site_perl"

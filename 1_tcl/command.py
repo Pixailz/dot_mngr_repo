@@ -8,9 +8,10 @@ def configure(self):
 	path = self.chrooted_get_path(self.tar_folder, self.chrooted)
 	Os.take(os.path.join(path, "unix"))
 	self.cmd_run(
-		 "./configure"
+		f"./configure"
 		 " --prefix=/usr"
 		 " --mandir=/usr/share/man"
+		 " --disable-rpath"
 	)
 
 def compile(self):
@@ -40,7 +41,6 @@ def check(self):
 
 def install(self):
 	path = self.chrooted_get_path(self.tar_folder, self.chrooted)
-	Os.take(os.path.join(path, "unix"))
 	self.cmd_run("make install")
 	self.cmd_run("chmod -v u+w /usr/lib/libtcl8.6.so")
 	self.cmd_run("make install-private-headers")

@@ -15,12 +15,14 @@ def configure(self):
 		"LC_ALL": "POSIX",
 		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
 	})
-	apply_patchs(self)
+	# apply_patchs(self)
 	self.cmd_run(
-		 "./configure --prefix=/usr"
+		 "./configure"
+		 " --prefix=/usr"
 		 ' --build="$(sh support/config.guess)"'
 		f" --host={TARGET_TRIPLET}"
 		 " --without-bash-malloc"
+		 " bash_cv_strtold_broken=no"
 	)
 
 def compile(self):
@@ -28,5 +30,4 @@ def compile(self):
 
 def install(self):
 	self.cmd_run(f"make DESTDIR={PREFIX} install")
-	if not os.path.exists(os.path.join(PREFIX, "bin/sh")):
-		self.cmd_run(f"ln -sf bash {PREFIX}/bin/sh")
+	self.cmd_run(f"ln -svf bash {PREFIX}/bin/sh")

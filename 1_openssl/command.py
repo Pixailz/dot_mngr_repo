@@ -9,7 +9,8 @@ def configure(self):
 		 " --prefix=/usr"
 		 " --openssldir=/etc/ssl"
 		 " --libdir=/lib"
-		 " shared zlib-dynamic"
+		 " shared"
+		 " zlib-dynamic"
 	)
 
 def compile(self):

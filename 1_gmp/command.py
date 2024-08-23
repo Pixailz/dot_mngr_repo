@@ -7,7 +7,6 @@ def configure(self):
 	self.cmd_run(
 		f"./configure"
 		 " --prefix=/usr"
-		 " --sysconfdir=/etc"
 		 " --enable-cxx"
 		 " --disable-static"
 		f" --docdir=/usr/share/doc/gmp-{self.version}"
@@ -15,6 +14,7 @@ def configure(self):
 
 def compile(self):
 	self.cmd_run("make")
+	self.cmd_run("make html")
 
 def check(self):
 	self.cmd_run("make check 2>&1 | tee gmp-check-log || true")

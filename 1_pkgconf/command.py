@@ -8,7 +8,7 @@ def configure(self):
 		 "./configure"
 		 " --prefix=/usr"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/dejagnu-{self.version}"
+		f" --docdir=/usr/share/doc/pkgconf-{self.version}"
 	)
 
 def compile(self):

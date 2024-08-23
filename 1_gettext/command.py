@@ -6,12 +6,11 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		f" --docdir=/usr/share/doc/gettext-{self.version}"
+		 " --disable-shared"
 	)
 
 def compile(self):
 	self.cmd_run("make")
 
 def install(self):
-	self.cmd_run("make install")
+	self.cmd_run("cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /usr/bin")

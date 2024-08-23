@@ -16,6 +16,9 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
+def check(self):
+	self.cmd_run('make test TESTOPTS="--timeout 120"')
+
 def install(self):
 	self.cmd_run("make install")
 	self.cmd_run(f"install -v -dm755 /usr/share/doc/python-{self.version}/html")
@@ -27,4 +30,3 @@ def install(self):
 		f"cp -R --no-preserve=mode {os.path.basename(python3_doc.tar_folder)}/*"
 		f" /usr/share/doc/python-{self.version}/html"
 	)
-#

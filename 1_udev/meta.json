@@ -3,11 +3,9 @@
 	"type": "github_tag",
 	"prefix": "systemd-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/systemd/systemd/archive/refs/tags/v255.tar.gz",
-	"version": "255",
-	"patchs": {
-		"systemd-255-upstream_fixes-1": "https://www.linuxfromscratch.org/patches/lfs/12.1/systemd-255-upstream_fixes-1.patch"
-	},
+	"link": "https://github.com/systemd/systemd/archive/refs/tags/v256.5.tar.gz",
+	"version": "256.5",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

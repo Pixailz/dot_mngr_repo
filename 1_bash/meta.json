@@ -1,17 +1,11 @@
 {
-	"value": "https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz",
-	"type": "no_scrap",
+	"value": "https://ftp.gnu.org/gnu/bash",
+	"type": "apache",
 	"prefix": "bash-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz",
-	"version": "5.2.21",
-	"patchs": {
-		"bash52-022": "https://ftp.gnu.org/gnu/bash/bash-5.2-patches/bash52-022",
-		"bash52-023": "https://ftp.gnu.org/gnu/bash/bash-5.2-patches/bash52-023",
-		"bash52-024": "https://ftp.gnu.org/gnu/bash/bash-5.2-patches/bash52-024",
-		"bash52-025": "https://ftp.gnu.org/gnu/bash/bash-5.2-patches/bash52-025",
-		"bash52-026": "https://ftp.gnu.org/gnu/bash/bash-5.2-patches/bash52-026"
-	},
+	"link": "https://ftp.gnu.org/gnu/bash/bash-5.2.32.tar.gz",
+	"version": "5.2.32",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

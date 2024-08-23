@@ -14,6 +14,7 @@ def configure(self):
 
 def compile(self):
 	self.cmd_run("make")
+	self.cmd_run("make html")
 
 def check(self):
 	self.cmd_run("make check")

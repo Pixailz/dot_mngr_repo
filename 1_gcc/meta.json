@@ -3,8 +3,8 @@
 	"type": "apache_dir",
 	"prefix": "gcc-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.gz",
-	"version": "13.2.0",
+	"link": "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.gz",
+	"version": "14.2.0",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

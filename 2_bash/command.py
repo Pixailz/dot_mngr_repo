@@ -20,12 +20,13 @@ def apply_patchs(self):
 def configure(self):
 	download_patchs(self)
 	self.chroot()
-	apply_patchs(self)
+	# apply_patchs(self)
 	self.cmd_run(
 		 "./configure"
 		 " --prefix=/usr"
 		 " --without-bash-malloc"
 		 " --with-installed-readline"
+		 " bash_cv_strtold_broken=no"
 		f" --docdir=/usr/share/doc/bash-{self.version}"
 	)
 

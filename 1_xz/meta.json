@@ -1,10 +1,10 @@
 {
-	"value": "https://fossies.org/linux/misc/xz",
-	"type": "fossies",
+	"value": "tukaani-project/xz",
+	"type": "github",
 	"prefix": "xz-",
 	"suffix": ".tar.xz",
-	"link": "https://fossies.org/linux/misc/xz-5.4.7.tar.xz",
-	"version": "5.4.7",
+	"link": "https://github.com/tukaani-project/xz/releases/download/v5.6.2/xz-5.6.2.tar.xz",
+	"version": "5.6.2",
 	"patchs": null,
 	"files": null,
 	"dependencies": null
