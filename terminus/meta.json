@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://freefr.dl.sourceforge.net/project/terminus-font/terminus-font-4.49/terminus-font-4.49.1.tar.gz",
 	"version": "4.49.1",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

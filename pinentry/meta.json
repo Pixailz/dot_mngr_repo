@@ -1,0 +1,11 @@
+{
+	"value": "https://www.gnupg.org/ftp/gcrypt/pinentry",
+	"type": "website",
+	"prefix": "pinentry-",
+	"suffix": ".tar.bz2",
+	"link": "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.1.tar.bz2",
+	"version": "1.3.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

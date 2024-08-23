@@ -1,0 +1,11 @@
+{
+	"value": "https://pagure.io/libaio/archive/libaio-0.3.113/libaio-libaio-0.3.113.tar.gz",
+	"type": "no_scrap",
+	"prefix": "libaio-",
+	"suffix": ".tar.gz",
+	"link": "https://pagure.io/libaio/archive/libaio-0.3.113/libaio-libaio-0.3.113.tar.gz",
+	"version": "0.3.113",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

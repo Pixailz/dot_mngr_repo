@@ -1,0 +1,11 @@
+{
+	"value": "LMDB/lmdb",
+	"type": "github_tag",
+	"prefix": "lmdb-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_0.9.31.tar.gz",
+	"version": "0.9.31",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

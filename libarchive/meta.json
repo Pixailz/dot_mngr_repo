@@ -1,0 +1,11 @@
+{
+	"value": "libarchive/libarchive",
+	"type": "github",
+	"prefix": "libarchive-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/libarchive/libarchive/releases/download/v3.7.2/libarchive-3.7.2.tar.gz",
+	"version": "3.7.2",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

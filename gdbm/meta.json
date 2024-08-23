@@ -3,8 +3,9 @@
 	"type": "apache",
 	"prefix": "gdbm-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.23.tar.gz",
-	"version": "1.23",
+	"link": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz",
+	"version": "1.24",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

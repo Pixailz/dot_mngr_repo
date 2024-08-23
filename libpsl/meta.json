@@ -1,0 +1,11 @@
+{
+	"value": "rockdaboot/libpsl",
+	"type": "github",
+	"prefix": "libpsl-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz",
+	"version": "0.21.5",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

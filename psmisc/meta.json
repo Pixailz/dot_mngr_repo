@@ -5,6 +5,7 @@
 	"suffix": ".tar.xz",
 	"link": "https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.7.tar.xz",
 	"version": "23.7",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

@@ -1,0 +1,11 @@
+{
+	"value": "rpm-software-management/popt",
+	"type": "github_tag",
+	"prefix": "popt-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/rpm-software-management/popt/archive/refs/tags/popt-1.19-release.tar.gz",
+	"version": "1.19",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

@@ -1,0 +1,11 @@
+{
+	"value": "https://www.gnupg.org/ftp/gcrypt/libgpg-error",
+	"type": "website",
+	"prefix": "libgpg-error-",
+	"suffix": ".tar.gz",
+	"link": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.gz",
+	"version": "1.50",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

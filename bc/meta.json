@@ -5,11 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://github.com/gavinhoward/bc/releases/download/6.7.6/bc-6.7.6.tar.gz",
 	"version": "6.7.6",
+	"patchs": null,
 	"files": null,
-	"dependencies": {
-		"required": [
-			"readline",
-			"ed"
-		]
-	}
+	"dependencies": null
 }

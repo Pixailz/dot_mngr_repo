@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.gz",
 	"version": "2.7.6",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

@@ -1,0 +1,11 @@
+{
+	"value": "https://cmake.org/files/v3.28",
+	"type": "apache",
+	"prefix": "cmake-",
+	"suffix": ".tar.gz",
+	"link": "https://cmake.org/files/v3.28/cmake-3.28.6.tar.gz",
+	"version": "3.28.6",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

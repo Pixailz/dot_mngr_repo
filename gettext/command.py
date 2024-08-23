@@ -3,10 +3,12 @@
 from dot_mngr import *
 
 def configure(self):
+	self.chroot()
 	self.cmd_run(
-		f"./configure --prefix={PREFIX}"
+		 "./configure"
+		 " --prefix=/usr"
 		 " --disable-static"
-		f" --docdir={PREFIX}/share/doc/{self.name}-{self.version}"
+		f" --docdir=/usr/share/doc/gettext-{self.version}"
 	)
 
 def compile(self):
@@ -16,10 +18,5 @@ def check(self):
 	self.cmd_run("make check")
 
 def install(self):
-	self.cmd_run(
-		"sudo make install && "
-		f"sudo chmod -v 0755 {PREFIX}/lib/preloadable_libintl.so"
-	)
-
-def uninstall(self):
-	self.cmd_run("sudo make uninstall")
+	self.cmd_run("make install")
+	self.cmd_run("chmod -v 0755 /usr/lib/preloadable_libintl.so")

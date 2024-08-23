@@ -3,28 +3,9 @@
 	"type": "website",
 	"prefix": "Python-",
 	"suffix": ".tar.xz",
-	"link": "https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tar.xz",
-	"version": "3.12.3",
+	"link": "https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tar.xz",
+	"version": "3.12.5",
+	"patchs": null,
 	"files": null,
-	"dependencies": {
-		"required": [
-			"bzip2",
-			"expat",
-			"gdbm",
-			"libffi",
-			"libxcrypt",
-			"openssl",
-			"tzdata",
-			"zlib",
-			"pkgconf"
-		],
-		"optional": [
-			"python-doc",
-			"python-pip",
-			"python-pipx",
-			"python-setuptools",
-			"sqlite",
-			"xz"
-		]
-	}
+	"dependencies": null
 }

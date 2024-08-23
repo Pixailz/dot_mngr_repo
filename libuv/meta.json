@@ -1,0 +1,11 @@
+{
+	"value": "libuv/libuv",
+	"type": "github_tag",
+	"prefix": "libarchive-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/libuv/libuv/archive/refs/tags/v1.48.0.tar.gz",
+	"version": "1.48.0",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

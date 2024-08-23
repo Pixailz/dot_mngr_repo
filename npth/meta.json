@@ -1,0 +1,11 @@
+{
+	"value": "https://www.gnupg.org/ftp/gcrypt/npth",
+	"type": "website",
+	"prefix": "npth-",
+	"suffix": ".tar.bz2",
+	"link": "https://www.gnupg.org/ftp/gcrypt/npth/npth-1.7.tar.bz2",
+	"version": "1.7",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

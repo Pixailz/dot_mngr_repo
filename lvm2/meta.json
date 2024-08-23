@@ -1,0 +1,11 @@
+{
+	"value": "https://sourceware.org/ftp/lvm2",
+	"type": "apache",
+	"prefix": "LVM2.",
+	"suffix": ".tgz",
+	"link": "https://sourceware.org/ftp/lvm2/LVM2.2.03.24.tgz",
+	"version": "2.03.24",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

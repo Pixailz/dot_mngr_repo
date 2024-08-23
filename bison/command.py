@@ -3,20 +3,18 @@
 from dot_mngr import *
 
 def configure(self):
-	take(os.path.join(self.tar_folder, "build"))
+	self.chroot()
 	self.cmd_run(
-		f"../configure --prefix={PREFIX}"
-		f" --docdir={PREFIX}/share/doc/{self.name}-{self.version}"
+		 "./configure"
+		 " --prefix=/usr"
+		f" --docdir=/usr/share/doc/bison-{self.version}"
 	)
 
 def compile(self):
 	self.cmd_run("make")
 
 def check(self):
-	self.cmd_run("make -k check")
+	self.cmd_run("make check")
 
 def install(self):
-	self.cmd_run("sudo make install")
-
-def uninstall(self):
-	self.cmd_run("sudo make uninstall")
+	self.cmd_run("make install")

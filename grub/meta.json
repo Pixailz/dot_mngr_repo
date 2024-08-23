@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://ftp.gnu.org/gnu/grub/grub-2.12.tar.gz",
 	"version": "2.12",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

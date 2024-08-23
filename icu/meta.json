@@ -1,0 +1,11 @@
+{
+	"value": "unicode-org/icu",
+	"type": "github_tag",
+	"prefix": "icu-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz",
+	"version": "75",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

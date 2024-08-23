@@ -1,0 +1,11 @@
+{
+	"value": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.40",
+	"type": "apache_no_sort",
+	"prefix": "util-linux-",
+	"suffix": ".tar.gz",
+	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.2.tar.gz",
+	"version": "2.40.2",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

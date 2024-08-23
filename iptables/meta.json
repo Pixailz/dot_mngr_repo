@@ -1,0 +1,11 @@
+{
+	"value": "https://www.netfilter.org/projects/iptables/files",
+	"type": "apache",
+	"prefix": "iptables-",
+	"suffix": ".tar.bz2",
+	"link": "https://www.netfilter.org/projects/iptables/files/iptables-1.8.8.tar.bz2",
+	"version": "1.8.8",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

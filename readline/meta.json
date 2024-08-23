@@ -3,8 +3,9 @@
 	"type": "apache",
 	"prefix": "readline-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/readline/readline-8.3-alpha.tar.gz",
-	"version": "8.3-alpha",
+	"link": "https://ftp.gnu.org/gnu/readline/readline-8.2.13.tar.gz",
+	"version": "8.2.13",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

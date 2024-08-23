@@ -1,0 +1,11 @@
+{
+	"value": "https://www.gnupg.org/ftp/gcrypt/gpgme",
+	"type": "website",
+	"prefix": "gpgme-",
+	"suffix": ".tar.bz2",
+	"link": "https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2",
+	"version": "1.23.2",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

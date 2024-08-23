@@ -3,8 +3,11 @@
 	"type": "apache",
 	"prefix": "glibc-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/glibc/glibc-2.39.tar.gz",
-	"version": "2.39",
+	"link": "https://ftp.gnu.org/gnu/glibc/glibc-2.40.tar.gz",
+	"version": "2.40",
+	"patchs": {
+		"glibc-2.40-fhs-1": "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.40-fhs-1.patch"
+	},
 	"files": null,
 	"dependencies": null
 }

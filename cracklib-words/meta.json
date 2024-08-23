@@ -1,0 +1,11 @@
+{
+	"value": "cracklib/cracklib",
+	"type": "github",
+	"prefix": "cracklib-words-",
+	"suffix": ".xz",
+	"link": "https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-words-2.9.11.xz",
+	"version": "2.9.11",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

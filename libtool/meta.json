@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://ftp.gnu.org/gnu/libtool/libtool-2.4.7.tar.gz",
 	"version": "2.4.7",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

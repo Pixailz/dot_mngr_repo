@@ -1,10 +1,11 @@
 {
-	"value": "mirror/ncurses",
-	"type": "github_tag",
+	"value": "https://invisible-mirror.net/archives/ncurses",
+	"type": "apache",
 	"prefix": "ncurses-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/mirror/ncurses/archive/refs/tags/v6.4.tar.gz",
-	"version": "6.4",
+	"link": "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz",
+	"version": "6.5",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

@@ -1,0 +1,11 @@
+{
+	"value": "https://mirrors.edge.kernel.org/pub/linux/utils/cryptsetup/v2.7",
+	"type": "apache_no_sort",
+	"prefix": "cryptsetup-",
+	"suffix": ".tar.gz",
+	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.3.tar.gz",
+	"version": "2.7.3",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

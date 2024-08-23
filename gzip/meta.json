@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.gz",
 	"version": "1.13",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

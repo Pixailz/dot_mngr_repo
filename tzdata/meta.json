@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://data.iana.org/time-zones/releases/tzdata2024a.tar.gz",
 	"version": "2024a",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

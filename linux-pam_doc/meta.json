@@ -1,0 +1,11 @@
+{
+	"value": "linux-pam/linux-pam",
+	"type": "github",
+	"prefix": "Linux-PAM-",
+	"suffix": "docs.tar.xz",
+	"link": "https://github.com/linux-pam/linux-pam/releases/download/v1.6.1/Linux-PAM-1.6.1-docs.tar.xz",
+	"version": "1.6.1-",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

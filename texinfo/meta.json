@@ -5,6 +5,7 @@
 	"suffix": ".tar.gz",
 	"link": "https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.tar.gz",
 	"version": "7.1",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

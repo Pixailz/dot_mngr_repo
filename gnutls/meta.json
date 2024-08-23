@@ -1,0 +1,11 @@
+{
+	"value": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8",
+	"type": "website",
+	"prefix": "gnutls-",
+	"suffix": ".tar.xz",
+	"link": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.7.1.tar.xz",
+	"version": "3.8.7.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

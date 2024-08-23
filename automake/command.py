@@ -3,9 +3,11 @@
 from dot_mngr import *
 
 def configure(self):
+	self.chroot()
 	self.cmd_run(
-		f"./configure --prefix={PREFIX}"
-		f" --docdir={PREFIX}/share/doc/{self.name}-{self.version}"
+		 "./configure"
+		 " --prefix=/usr"
+		f" --docdir=/usr/share/doc/automake-{self.version}"
 	)
 
 def compile(self):
@@ -15,7 +17,4 @@ def check(self):
 	self.cmd_run("make check")
 
 def install(self):
-	self.cmd_run("sudo make install")
-
-def uninstall(self):
-	self.cmd_run("sudo make uninstall")
+	self.cmd_run("make install")
