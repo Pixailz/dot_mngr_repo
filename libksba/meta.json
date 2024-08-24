@@ -3,7 +3,7 @@
 	"type": "website",
 	"prefix": "libksba-",
 	"suffix": ".tar.bz2",
-	"link": "https://www.gnupg.org/ftp/gcrypt/libksba//libksba-1.6.7.tar.bz2",
+	"link": "https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2",
 	"version": "1.6.7",
 	"patchs": null,
 	"files": null,

@@ -3,9 +3,13 @@
 	"type": "github",
 	"prefix": "curl-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/curl/curl/releases/download/curl-8_8_0/curl-8.8.0.tar.gz",
-	"version": "8.8.0",
+	"link": "https://github.com/curl/curl/releases/download/curl-8_9_1/curl-8.9.1.tar.gz",
+	"version": "8.9.1",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"curl",
+		"curl-config",
+		"/lib/libcurl.so"
+	],
 	"dependencies": null
 }

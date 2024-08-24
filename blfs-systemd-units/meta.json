@@ -1,0 +1,11 @@
+{
+	"value": "https://www.linuxfromscratch.org/blfs/downloads/systemd",
+	"type": "website",
+	"prefix": "blfs-systemd-units-",
+	"suffix": ".tar.xz",
+	"link": "https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20240801.tar.xz",
+	"version": "20240801",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

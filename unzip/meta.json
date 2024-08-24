@@ -1,0 +1,19 @@
+{
+	"value": "https://downloads.sourceforge.net/infozip/unzip60.tar.gz",
+	"type": "no_scrap",
+	"prefix": "unzip",
+	"suffix": ".tar.gz",
+	"link": "https://downloads.sourceforge.net/infozip/unzip60.tar.gz",
+	"version": "60",
+	"patchs": {
+		"unzip-6.0-consolidated-1": "https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-consolidated_fixes-1.patch",
+		"unzip-6.0-gcc14-1": "https://www.linuxfromscratch.org/patches/blfs/svn/unzip-6.0-gcc14-1.patch"
+	},
+	"files": [
+		"funzip",
+		"unzip",
+		"zipgrep",
+		"zipinfo"
+	],
+	"dependencies": null
+}

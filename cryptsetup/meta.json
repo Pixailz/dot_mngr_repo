@@ -3,9 +3,13 @@
 	"type": "apache_no_sort",
 	"prefix": "cryptsetup-",
 	"suffix": ".tar.gz",
-	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.3.tar.gz",
-	"version": "2.7.3",
+	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/cryptsetup/v2.7/cryptsetup-2.7.4.tar.gz",
+	"version": "2.7.4",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"cryptsetup",
+		"integritysetup",
+		"veritysetup"
+	],
 	"dependencies": null
 }

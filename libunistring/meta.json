@@ -6,6 +6,8 @@
 	"link": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.gz",
 	"version": "1.2",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"/lib/libunistring.so"
+	],
 	"dependencies": null
 }

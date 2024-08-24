@@ -6,6 +6,9 @@
 	"link": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz",
 	"version": "2.3.7",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"idn2",
+		"/lib/libidn2.so"
+	],
 	"dependencies": null
 }

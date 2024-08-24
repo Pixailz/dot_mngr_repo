@@ -1,11 +1,13 @@
 {
 	"value": "lfs-book/make-ca",
-	"type": "github",
+	"type": "github_tag",
 	"prefix": "make-ca-",
 	"suffix": ".tar.xz",
-	"link": "https://github.com/lfs-book/make-ca/releases/download/v1.13/make-ca-1.13.tar.xz",
-	"version": "1.13",
+	"link": "https://github.com/lfs-book/make-ca/archive/refs/tags/v1.14.tar.gz",
+	"version": "1.14",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"make-ca"
+	],
 	"dependencies": null
 }

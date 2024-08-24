@@ -8,6 +8,19 @@
 	"patchs": {
 		"bzip2-1.0.8-install_docs-1": "https://www.linuxfromscratch.org/patches/lfs/12.1/bzip2-1.0.8-install_docs-1.patch"
 	},
-	"files": null,
+	"files": [
+		"bunzip2",
+		"bzcat",
+		"bzcmp",
+		"bzdiff",
+		"bzegrep",
+		"bzfgrep",
+		"bzgrep",
+		"bzip2",
+		"bzip2recover",
+		"bzless",
+		"bzmore",
+		"/lib/libbz2.so"
+	],
 	"dependencies": null
 }

@@ -3,9 +3,12 @@
 	"type": "github",
 	"prefix": "cracklib-words-",
 	"suffix": ".xz",
-	"link": "https://github.com/cracklib/cracklib/releases/download/v2.9.11/cracklib-words-2.9.11.xz",
-	"version": "2.9.11",
+	"link": "https://github.com/cracklib/cracklib/releases/download/v2.10.2/cracklib-words-2.10.2.xz",
+	"version": "2.10.2",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"/share/dict/cracklib-words",
+		"/share/dict/cracklib-extra-words"
+	],
 	"dependencies": null
 }

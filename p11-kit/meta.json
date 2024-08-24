@@ -6,6 +6,12 @@
 	"link": "https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz",
 	"version": "0.25.5",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"p11-kit",
+		"trust",
+		"update-ca-certificates",
+		"/lib/libp11-kit.so",
+		"/lib/p11-kit-proxy.so"
+	],
 	"dependencies": null
 }

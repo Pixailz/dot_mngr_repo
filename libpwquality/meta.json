@@ -1,0 +1,16 @@
+{
+	"value": "libpwquality/libpwquality",
+	"type": "github",
+	"prefix": "libpwquality-",
+	"suffix": ".tar.bz2",
+	"link": "https://github.com/libpwquality/libpwquality/releases/download/libpwquality-1.4.5/libpwquality-1.4.5.tar.bz2",
+	"version": "1.4.5",
+	"patchs": null,
+	"files": [
+		"pwmake",
+		"pwscore",
+		"/lib/libpwquality.so",
+		"/lib/security/pam_pwquality.so"
+	],
+	"dependencies": null
+}

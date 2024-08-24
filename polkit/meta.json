@@ -1,0 +1,19 @@
+{
+	"value": "polkit-org/polkit",
+	"type": "github_tag",
+	"prefix": "polkit-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/polkit-org/polkit/archive/refs/tags/125.tar.gz",
+	"version": "125",
+	"patchs": null,
+	"files": [
+		"pkaction",
+		"pkcheck",
+		"pkexec",
+		"pkttyagent",
+		"polkitd",
+		"/lib/libpol-kit-agent-1.so",
+		"/lib/libpol-kit-gobject-1.so"
+	],
+	"dependencies": null
+}

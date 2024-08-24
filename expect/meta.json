@@ -3,7 +3,7 @@
 	"type": "fossies",
 	"prefix": "expect",
 	"suffix": ".tar.gz",
-	"link": "https://sourceforge.net/projects/expect/files/Expect/5.45.4/expect5.45.4.tar.gz/download",
+	"link": "https://fossies.org/linux/misc/expect5.45.4.tar.gz",
 	"version": "5.45.4",
 	"patchs": {
 		"expect-5.45.4-gcc14-1": "https://www.linuxfromscratch.org/patches/lfs/12.2-rc1/expect-5.45.4-gcc14-1.patch"

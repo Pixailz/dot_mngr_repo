@@ -6,6 +6,20 @@
 	"link": "https://mirrors.edge.kernel.org/pub/linux/docs/man-pages/man-pages-6.9.1.tar.gz",
 	"version": "6.9.1",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"/share/man/man1",
+		"/share/man/man2",
+		"/share/man/man2const",
+		"/share/man/man2type",
+		"/share/man/man3",
+		"/share/man/man3const",
+		"/share/man/man3head",
+		"/share/man/man3type",
+		"/share/man/man4",
+		"/share/man/man5",
+		"/share/man/man6",
+		"/share/man/man7",
+		"/share/man/man8"
+	],
 	"dependencies": null
 }

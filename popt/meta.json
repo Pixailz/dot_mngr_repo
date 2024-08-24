@@ -6,6 +6,8 @@
 	"link": "https://github.com/rpm-software-management/popt/archive/refs/tags/popt-1.19-release.tar.gz",
 	"version": "1.19",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"/lib/libpopt.so"
+	],
 	"dependencies": null
 }

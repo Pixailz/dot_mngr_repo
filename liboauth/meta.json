@@ -1,0 +1,13 @@
+{
+	"value": "https://sourceforge.net/projects/liboauth/files/",
+	"type": "sourceforge",
+	"prefix": "liboauth-",
+	"suffix": ".tar.gz",
+	"link": "https://sourceforge.net/projects/liboauth/files/liboauth-1.0.3.tar.gz",
+	"version": "1.0.3",
+	"patchs": {
+		"liboauth-1.0.3-openssl-1.1.0-3": "https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3.patch"
+	},
+	"files": null,
+	"dependencies": null
+}

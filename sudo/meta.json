@@ -1,0 +1,19 @@
+{
+	"value": "https://www.sudo.ws/dist",
+	"type": "apache_no_sort",
+	"prefix": "sudo-",
+	"suffix": ".tar.gz",
+	"link": "https://www.sudo.ws/dist/sudo-1.9.15p5.tar.gz",
+	"version": "1.9.15p5",
+	"patchs": null,
+	"files": [
+		"cvtsudoers",
+		"sudo",
+		"sudo_logsrvd",
+		"sudo_sendlog",
+		"sudoedit",
+		"sudoreplay",
+		"visudo"
+	],
+	"dependencies": null
+}

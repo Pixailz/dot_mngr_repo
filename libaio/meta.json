@@ -6,6 +6,8 @@
 	"link": "https://pagure.io/libaio/archive/libaio-0.3.113/libaio-libaio-0.3.113.tar.gz",
 	"version": "0.3.113",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"/lib/libaio.so"
+	],
 	"dependencies": null
 }

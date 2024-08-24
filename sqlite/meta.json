@@ -1,0 +1,14 @@
+{
+	"value": "https://fossies.org/linux/misc/sqlite-autoconf-",
+	"type": "fossies_search",
+	"prefix": "sqlite-autoconf-",
+	"suffix": ".tar.gz",
+	"link": "https://fossies.org/linux/misc/sqlite-autoconf-3460100.tar.gz",
+	"version": "3460100",
+	"patchs": null,
+	"files": [
+		"sqlite3",
+		"/lib/libsqlite3.so"
+	],
+	"dependencies": null
+}

@@ -3,9 +3,16 @@
 	"type": "apache",
 	"prefix": "LVM2.",
 	"suffix": ".tgz",
-	"link": "https://sourceware.org/ftp/lvm2/LVM2.2.03.24.tgz",
-	"version": "2.03.24",
+	"link": "https://sourceware.org/ftp/lvm2/LVM2.2.03.26.tgz",
+	"version": "2.03.26",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"blkdeactivate",
+		"fsadm",
+		"lvm",
+		"lvmdump",
+		"vgimportclone",
+		"/lib/libdevmapper.so"
+	],
 	"dependencies": null
 }

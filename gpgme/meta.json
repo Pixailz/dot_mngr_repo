@@ -6,6 +6,11 @@
 	"link": "https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.2.tar.bz2",
 	"version": "1.23.2",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"gpgme-json",
+		"gpgme-tool",
+		"/lib/libgpgme.so",
+		"/lib/libgpgmepp.so"
+	],
 	"dependencies": null
 }

@@ -6,6 +6,11 @@
 	"link": "https://github.com/systemd/systemd/archive/refs/tags/v256.5.tar.gz",
 	"version": "256.5",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"homectl",
+		"systemctl",
+		"systemd-cryptenroll",
+		"/lib/pam_systemd.so"
+	],
 	"dependencies": null
 }

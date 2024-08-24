@@ -6,6 +6,10 @@
 	"link": "https://ftp.gnu.org/gnu/bash/bash-5.2.32.tar.gz",
 	"version": "5.2.32",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"bash",
+		"bashbug",
+		"sh"
+	],
 	"dependencies": null
 }

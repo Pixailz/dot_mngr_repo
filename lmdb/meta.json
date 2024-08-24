@@ -6,6 +6,12 @@
 	"link": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_0.9.31.tar.gz",
 	"version": "0.9.31",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"mdb_copy",
+		"mdb_dump",
+		"mdb_load",
+		"mdb_stat",
+		"/lib/liblmdb.so"
+	],
 	"dependencies": null
 }

@@ -3,9 +3,14 @@
 	"type": "github_tag",
 	"prefix": "libxml2-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/GNOME/libxml2/archive/refs/tags/v2.13.2.tar.gz",
-	"version": "2.13.2",
+	"link": "https://github.com/GNOME/libxml2/archive/refs/tags/v2.13.3.tar.gz",
+	"version": "2.13.3",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"xml2-config",
+		"xmlcatalog",
+		"xmllint",
+		"/lib/libxml2.so"
+	],
 	"dependencies": null
 }

@@ -6,6 +6,27 @@
 	"link": "https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.0.tar.bz2",
 	"version": "2.5.0",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"addgnupghome",
+		"applygnupgdefaults",
+		"dirmngr",
+		"dirmngr-client",
+		"g13",
+		"gpg-agent",
+		"gpg-card",
+		"gpg-connect-agent",
+		"gpg",
+		"gpgconf",
+		"gpgparsemail",
+		"gpgscm",
+		"gpgsm",
+		"gpgsplit",
+		"gpgtar",
+		"gpgv",
+		"gpg-wks-client",
+		"gpg-wks-server",
+		"kbxutil",
+		"watchgnupg"
+	],
 	"dependencies": null
 }
