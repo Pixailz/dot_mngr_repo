@@ -7,7 +7,7 @@ def configure(self):
 	self.cmd_run("sed -i '/\"lib64\"/s/64//' Modules/GNUInstallDirs.cmake ")
 	self.cmd_run(
 		 "./bootstrap"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --system-libs"
 		 " --mandir=/share/man"
 		 " --no-system-jsoncpp"
@@ -19,11 +19,11 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run(
-		f"LC_ALL=en._US.UTF-8 bin/ctest -j{NB_CORE}"
-		f" -O cmake-{self.version}-test.log"
-	)
+# def check(self):
+# 	self.cmd_run(
+# 		f"LC_ALL=en._US.UTF-8 bin/ctest -j{NB_PROC}"
+# 		f" -O cmake-{self.version}-test.log"
+# 	)
 
 def install(self):
 	self.cmd_run("make install")

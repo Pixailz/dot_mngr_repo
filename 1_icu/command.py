@@ -7,7 +7,7 @@ def configure(self):
 	os.chdir("icu4c/source")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):

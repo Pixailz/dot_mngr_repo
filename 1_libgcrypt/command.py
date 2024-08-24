@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!{PREFIX}/bin/env python3
 
 from dot_mngr import *
 
@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -20,21 +20,21 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -v -dm755 /usr/share/doc/libgcrypt-{self.version}")
+	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/libgcrypt-{self.version}")
 	self.cmd_run(
 		 "install -v -m644    README doc/{README.apichanges,fips*,libgcrypt*}"
-		f" /usr/share/doc/libgcrypt-{self.version}"
+		f" {PREFIX}/share/doc/libgcrypt-{self.version}"
 	)
-	self.cmd_run(f"install -v -dm755 /usr/share/doc/libgcrypt-{self.version}/html")
+	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/libgcrypt-{self.version}/html")
 	self.cmd_run(
 		 "install -v -m644 doc/gcrypt.html/*"
-		f" /usr/share/doc/libgcrypt-{self.version}/html"
+		f" {PREFIX}/share/doc/libgcrypt-{self.version}/html"
 	)
 	self.cmd_run(
 		 "install -v -m644 doc/gcrypt_nochunks.html"
-		f" /usr/share/doc/libgcrypt-{self.version}"
+		f" {PREFIX}/share/doc/libgcrypt-{self.version}"
 	)
 	self.cmd_run(
 		 "install -v -m644 doc/gcrypt.{txt,texi}"
-		f" /usr/share/doc/libgcrypt-{self.version}"
+		f" {PREFIX}/share/doc/libgcrypt-{self.version}"
 	)

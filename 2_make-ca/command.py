@@ -4,7 +4,7 @@ from dot_mngr import *
 
 def install(self):
 	self.chroot()
-	self.cmd_run("/usr/sbin/make-ca -g")
+	self.cmd_run(f"{PREFIX}/sbin/make-ca -g")
 	self.cmd_run("systemctl enable update-pki.timer")
 	self.cmd_run("mkdir -pv /etc/profile.d")
 	self.cmd_run(

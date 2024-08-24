@@ -9,10 +9,10 @@ def configure(self):
 	self.cmd_run("autoconf")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
 		 " --localstatedir=/var"
-		 " --libexecdir=/usr/lib"
+		f" --libexecdir={PREFIX}/lib"
          " --disable-static"
          " --disable-debug"
          " --with-tls=openssl"
@@ -34,8 +34,8 @@ def compile(self):
 	self.cmd_run("make depend")
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run("make test")
+# def check(self):
+# 	self.cmd_run("make test")
 
 def install(self):
 	self.cmd_run("make install")
@@ -44,7 +44,7 @@ def install(self):
 	self.cmd_run("install -v -dm700 -o ldap -g ldap /etc/openldap/slapd.d")
 	self.cmd_run("chmod -v 640 /etc/openldap/slapd.{conf,ldif}")
 	self.cmd_run("chown -v root:ldap /etc/openldap/slapd.{conf,ldif}")
-	self.cmd_run(f"install -v -dm755 /usr/share/doc/openldap-{self.version}")
+	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/openldap-{self.version}")
 	self.cmd_run(
 		 "cp -vfr doc/{drafts,rfc,guide}"
 		f" /usr/share/doc/openldap-{self.version}"

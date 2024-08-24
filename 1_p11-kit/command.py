@@ -6,20 +6,20 @@ def configure(self):
 	self.chroot()
 	self.cmd_run("sed '20,$ d' -i trust/trust-extract-compat")
 	self.cmd_run(
-		"""
+		f"""
 		cat >> trust/trust-extract-compat <<-EOF
 		# Copy existing anchor modifications to /etc/ssl/local
-		/usr/libexec/make-ca/copy-trust-modification
+		{PREFIX}/libexec/make-ca/copy-trust-modification
 
 		# Updates trust stores
-		/usr/sbin/make-ca -r
+		{PREFIX}/sbin/make-ca -r
 		EOF
 		"""
 	)
 	Os.take("p11-build")
 	self.cmd_run(
 		 "meson setup .."
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --buildtype=release"
 		 " -Dtrust_paths=/etc/pki/anchors"
 	)
@@ -33,7 +33,7 @@ def check(self):
 def install(self):
 	self.cmd_run("ninja install")
 	self.cmd_run(
-		 "ln -sfv /usr/libexec/p11-kit/trust-extract-compat"
-		 " /usr/bin/update-ca-certificates"
+		f"ln -sfv {PREFIX}/libexec/p11-kit/trust-extract-compat"
+		f" {PREFIX}/bin/update-ca-certificates"
 	)
-	self.cmd_run("ln -sfv ./pkcs11/p11-kit-trust.so /usr/lib/libnssckbi.so")
+	self.cmd_run(f"ln -sfv ./pkcs11/p11-kit-trust.so {PREFIX}/lib/libnssckbi.so")

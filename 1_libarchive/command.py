@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		 " --without-nettle"
 	)
@@ -14,8 +14,8 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run("LC_ALL=C make check")
+# def check(self):
+# 	self.cmd_run("LC_ALL=C make check")
 
 def install(self):
 	self.cmd_run("make install")

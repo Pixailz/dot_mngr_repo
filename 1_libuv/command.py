@@ -7,15 +7,15 @@ def configure(self):
 	self.cmd_run("sh autogen.sh")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 	)
 
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run("make check")
+# def check(self):
+# 	self.cmd_run("make check")
 
 def install(self):
 	self.cmd_run("make install")

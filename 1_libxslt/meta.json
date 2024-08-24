@@ -1,0 +1,10 @@
+{
+	"reference": "main@libxslt",
+	"dependencies": {
+		"required": [
+			"1_libxml2",
+			"1_docbook-xml",
+			"1_docbook-xsl-nons"
+		]
+	}
+}

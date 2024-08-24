@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -20,16 +20,16 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -v -dm755 /usr/share/doc/libassuan-{self.version}/html")
+	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/libassuan-{self.version}/html")
 	self.cmd_run(
 		 "install -v -m644 doc/assuan.html/*"
-		f" /usr/share/doc/libassuan-{self.version}/html"
+		f" {PREFIX}/share/doc/libassuan-{self.version}/html"
 	)
 	self.cmd_run(
 		 "install -v -m644 doc/assuan_nochunks.html"
-		f" /usr/share/doc/libassuan-{self.version}"
+		f" {PREFIX}/share/doc/libassuan-{self.version}"
 	)
 	self.cmd_run(
 		 "install -v -m644 doc/assuan.{txt,texi}"
-		f" /usr/share/doc/libassuan-{self.version}"
+		f" {PREFIX}/share/doc/libassuan-{self.version}"
 	)

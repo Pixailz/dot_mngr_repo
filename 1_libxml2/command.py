@@ -8,13 +8,13 @@ def configure(self):
 		self.cmd_run("sh autogen.sh")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
 		 " --disable-static"
 		 " --with-history"
 		 " --with-icu"
-		 " PYTHON=/usr/bin/python3"
-		f" --docdir=/usr/share/doc/libxml2-{self.version}"
+		f" PYTHON={PREFIX}/bin/python3"
+		f" --docdir={PREFIX}/share/doc/libxml2-{self.version}"
 	)
 
 def compile(self):
@@ -22,5 +22,5 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("rm -vf /usr/lib/libxml2.la")
-	self.cmd_run("sed '/libs=/s/xml2.*/xml2\"/' -i /usr/bin/xml2-config")
+	self.cmd_run("rm -vf {PREFIX}/lib/libxml2.la")
+	self.cmd_run(f"sed '/libs=/s/xml2.*/xml2\"/' -i {PREFIX}/bin/xml2-config")

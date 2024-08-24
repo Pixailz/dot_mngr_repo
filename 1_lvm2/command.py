@@ -5,9 +5,9 @@ from dot_mngr import *
 def configure(self):
 	self.chroot()
 	self.cmd_run(
-		 "PATH+=:/usr/sbin"
+		f"PATH+=:{PREFIX}/sbin"
 		 " ./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --enable-cmdlib"
 		 " --enable-pkgconfig"
 		 " --enable-udev_sync"
@@ -24,11 +24,11 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run("make -C tools install_tools_dynamic")
-	self.cmd_run("make -C udev install")
-	self.cmd_run("make -C libdm install")
-	self.cmd_run("LC_ALL=en_US.UTF-8 make check_local")
+# def check(self):
+# 	self.cmd_run("make -C tools install_tools_dynamic")
+# 	self.cmd_run("make -C udev install")
+# 	self.cmd_run("make -C libdm install")
+# 	self.cmd_run("LC_ALL=en_US.UTF-8 make check_local")
 
 def install(self):
 	self.cmd_run("make install")

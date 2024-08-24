@@ -8,7 +8,7 @@ def configure(self):
 		self.cmd_run("sh autogen.sh")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 	)
 

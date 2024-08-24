@@ -8,7 +8,7 @@ def configure(self):
 	self.cmd_run("sed '/plugin_common/a #include <time.h>' -i plugins/cram.c")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
          " --enable-auth-sasldb"
          " --with-dblib=lmdb"
@@ -22,7 +22,7 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("make install")
-	path = f"/usr/share/doc/cyrus-sasl-{self.version}"
+	path = f"{PREFIX}/share/doc/cyrus-sasl-{self.version}"
 	self.cmd_run(f"install -v -dm755 {path}/html")
 	self.cmd_run(f"install -v -m644 saslauthd/LDAP_SASLAUTHD {path}")
 	self.cmd_run(f"install -v -m644 doc/legacy/*.html {path}/html")

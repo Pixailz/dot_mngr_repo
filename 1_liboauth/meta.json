@@ -1,0 +1,8 @@
+{
+	"reference": "main@liboauth",
+	"dependencies": {
+		"required": [
+			"1_curl"
+		]
+	}
+}

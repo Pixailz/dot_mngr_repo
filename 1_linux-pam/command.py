@@ -12,12 +12,12 @@ def configure(self):
 	)
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-         " --sbindir=/usr/sbin"
+		f" --prefix={PREFIX}"
+        f" --sbindir={PREFIX}/sbin"
          " --sysconfdir=/etc"
-         " --libdir=/usr/lib"
-         " --enable-securedir=/usr/lib/security"
-		f" --docdir=/usr/share/doc/Linux-PAM-{self.version}"
+        f" --libdir={PREFIX}/lib"
+        f" --enable-securedir={PREFIX}/lib/security"
+		f" --docdir={PREFIX}/share/doc/Linux-PAM-{self.version}"
 	)
 
 def compile(self):
@@ -38,4 +38,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("chmod -v 4755 /usr/sbin/unix_chkpwd")
+	self.cmd_run(f"chmod -v 4755 {PREFIX}/sbin/unix_chkpwd")

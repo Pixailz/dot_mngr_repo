@@ -6,10 +6,10 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		 " --enable-lib-only"
-		f" --docdir=/usr/share/doc/nghttp2-{self.version}"
+		f" --docdir={PREFIX}/share/doc/nghttp2-{self.version}"
 	)
 
 def compile(self):

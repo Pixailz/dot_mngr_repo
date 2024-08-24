@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 	)
 
@@ -18,9 +18,9 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("chmod -v 755 /usr/lib/lib{hogweed,nettle}.so")
-	self.cmd_run(f"install -v -m755 -d /usr/share/doc/nettle-{self.version}")
+	self.cmd_run(f"chmod -v 755 {PREFIX}" "/lib/lib{hogweed,nettle}.so")
+	self.cmd_run(f"install -v -m755 -d {PREFIX}/share/doc/nettle-{self.version}")
 	self.cmd_run(
 		 "install -v -m644 nettle.{html,pdf}"
-		f" /usr/share/doc/nettle-{self.version}"
+		f" {PREFIX}/share/doc/nettle-{self.version}"
 	)

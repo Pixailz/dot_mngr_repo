@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		 " --with-openssl"
 		 " --enable-threaded-resolver"
@@ -25,4 +25,4 @@ def install(self):
 		 " -name \\*.3 -o"
 		 " -name CMakeLists.txt \\) -delete"
 	)
-	self.cmd_run(f"cp -v -R docs -T /usr/share/doc/curl-{self.version}")
+	self.cmd_run(f"cp -v -R docs -T {PREFIX}/share/doc/curl-{self.version}")

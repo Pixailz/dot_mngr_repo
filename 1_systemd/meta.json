@@ -1,0 +1,7 @@
+{
+	"reference": "main@systemd",
+	"dependencies": [
+		"1_linux-pam",
+		"1_polkit"
+	]
+}

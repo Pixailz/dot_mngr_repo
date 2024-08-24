@@ -1,0 +1,8 @@
+{
+	"reference": "main@sqlite",
+	"dependencies": {
+		"required": [
+			"1_unzip"
+		]
+	}
+}

@@ -7,7 +7,7 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "cmake"
-		 " -DCMAKE_INSTALL_PREFIX=/usr"
+		f" -DCMAKE_INSTALL_PREFIX={PREFIX}"
 		 " -DCMAKE_BUILD_TYPE=Release"
 		 " -DBUILD_STATIC_LIBS=OFF"
 		 " .."
@@ -21,5 +21,5 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	# self.cmd_run(f"install -d -vm755 /usr/share/doc/json-c-{self.version}")
-	# self.cmd_run(f"install -v -m644 ../doc/html/* /usr/share/doc/json-c-{self.version}")
+	# self.cmd_run(f"install -d -vm755 {PREFIX}/share/doc/json-c-{self.version}")
+	# self.cmd_run(f"install -v -m644 ../doc/html/* {PREFIX}/share/doc/json-c-{self.version}")

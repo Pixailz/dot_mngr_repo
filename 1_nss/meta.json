@@ -1,0 +1,10 @@
+{
+	"reference": "main@nss",
+	"dependencies": {
+		"required": [
+			"1_nspr",
+			"1_sqlite",
+			"1_p11-kit"
+		]
+	}
+}

@@ -7,7 +7,7 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "meson setup"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --buildtype=release"
 	)
 

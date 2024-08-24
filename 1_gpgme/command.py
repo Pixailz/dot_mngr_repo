@@ -7,7 +7,7 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "../configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-gpg-test"
 	)
 

@@ -1,0 +1,9 @@
+{
+	"reference": "main@libpwquality",
+	"dependencies": {
+		"required": [
+			"1_cracklib",
+			"1_linux-pam"
+		]
+	}
+}

@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -17,4 +17,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -v -m644 -D README /usr/share/doc/libgpg-error-{self.version}/README")
+	self.cmd_run(f"install -v -m644 -D README {PREFIX}/share/doc/libgpg-error-{self.version}/README")

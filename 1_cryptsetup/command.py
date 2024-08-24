@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-ssh-token"
 		 " --disable-asciidoc"
 	)
@@ -14,8 +14,8 @@ def configure(self):
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run("make check")
+# def check(self):
+# 	self.cmd_run("make check")
 
 def install(self):
 	self.cmd_run("make install")

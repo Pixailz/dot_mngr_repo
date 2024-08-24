@@ -7,10 +7,10 @@ def configure(self):
 	self.chroot()
 	self.cmd_run("autoreconf -fiv")
 	self.cmd_run(
-		"PYTHON=python3 ./configure"
-		" --prefix=/usr"
-		" --disable-static"
-		" --with-default-dict=/usr/lib/cracklib/pw_dict"
+		 "PYTHON=python3 ./configure"
+		f" --prefix={PREFIX}"
+		 " --disable-static"
+		f" --with-default-dict={PREFIX}/lib/cracklib/pw_dict"
 	)
 
 def compile(self):
@@ -24,15 +24,15 @@ def install(self):
 	cracklib_word = get_package_from_name("1_cracklib-words")
 	self.cmd_run(
 		f"install -v -m644 -D ../{cracklib_word.file_name}"
-		 " /usr/share/dict/cracklib-words.xz"
+		f" {PREFIX}/share/dict/cracklib-words.xz"
 	)
-	if os.path.exists("/usr/share/dict/cracklib-words"):
-		self.cmd_run("rm -v /usr/share/dict/cracklib-words")
-	self.cmd_run("unxz -v /usr/share/dict/cracklib-words.xz")
-	self.cmd_run("ln -v -sf cracklib-words /usr/share/dict/words")
-	self.cmd_run("echo $(hostname) >> /usr/share/dict/cracklib-extra-words")
-	self.cmd_run("install -v -m755 -d /usr/lib/cracklib")
+	if os.path.exists(f"{PREFIX}/share/dict/cracklib-words"):
+		self.cmd_run(f"rm -v {PREFIX}/share/dict/cracklib-words")
+	self.cmd_run(f"unxz -v {PREFIX}/share/dict/cracklib-words.xz")
+	self.cmd_run(f"ln -v -sf cracklib-words {PREFIX}/share/dict/words")
+	self.cmd_run(f"echo $(hostname) >> {PREFIX}/share/dict/cracklib-extra-words")
+	self.cmd_run(f"install -v -m755 -d {PREFIX}/lib/cracklib")
 	self.cmd_run(
-		 "create-cracklib-dict /usr/share/dict/cracklib-words"
-		 " /usr/share/dict/cracklib-extra-words"
+		f"create-cracklib-dict {PREFIX}/share/dict/cracklib-words"
+		f" {PREFIX}/share/dict/cracklib-extra-words"
 	)
