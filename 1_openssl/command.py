@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./config"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --openssldir=/etc/ssl"
 		 " --libdir=/lib"
 		 " shared"
@@ -22,5 +22,5 @@ def check(self):
 def install(self):
 	self.cmd_run("sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile")
 	self.cmd_run("make MANSUFFIX=ssl install")
-	self.cmd_run(f"mv -v /usr/share/doc/openssl /usr/share/doc/openssl-{self.version}")
-	self.cmd_run(f"cp -vfr doc/* /usr/share/doc/openssl-{self.version}")
+	self.cmd_run(f"mv -v {PREFIX}/share/doc/openssl {PREFIX}/share/doc/openssl-{self.version}")
+	self.cmd_run(f"cp -vfr doc/* {PREFIX}/share/doc/openssl-{self.version}")

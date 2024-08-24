@@ -7,7 +7,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --enable-shared"
 		 " --with-system-expat"
 		 " --enable-optimizations"
@@ -21,12 +21,12 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -v -dm755 /usr/share/doc/python-{self.version}/html")
+	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/python-{self.version}/html")
 	python3_doc = get_package_from_name("1_python3-doc")
 	python3_doc.prepare_tarball(chroot=self.chrooted)
 	tar_file = self.chrooted_get_path(python3_doc.file_path, self.chrooted)
 	self.cmd_run(f"tar --no-same-owner -xvf {tar_file}")
 	self.cmd_run(
 		f"cp -R --no-preserve=mode {os.path.basename(python3_doc.tar_folder)}/*"
-		f" /usr/share/doc/python-{self.version}/html"
+		f" {PREFIX}/share/doc/python-{self.version}/html"
 	)

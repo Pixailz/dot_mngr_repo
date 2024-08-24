@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -17,7 +17,7 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("make TEXMF=/usr/share/texmf install-tex")
-	os.chdir("/usr/share/info")
+	self.cmd_run(f"make TEXMF={PREFIX}/share/texmf install-tex")
+	os.chdir(f"{PREFIX}/share/info")
 	self.cmd_run("rm -fv dir")
 	self.cmd_run("for f in * ; do install-info $f dir 2>/dev/null ; done")

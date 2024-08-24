@@ -1,5 +1,5 @@
 {
-	"last_checked": 1724418149.380302,
+	"last_checked": 1725028812.397866,
 	"packages": [
 		"1_acl",
 		"1_attr",
@@ -51,6 +51,7 @@
 		"1_linux-headers",
 		"1_linux-util",
 		"1_linux",
+		"1_lz4",
 		"1_m4",
 		"1_make",
 		"1_man-db",

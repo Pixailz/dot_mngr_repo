@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "CC=gcc ./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " -G -O3 -r"
 	)
 

@@ -6,10 +6,10 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		f"./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --enable-cxx"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/gmp-{self.version}"
+		f" --docdir={PREFIX}/share/doc/gmp-{self.version}"
 	)
 
 def compile(self):

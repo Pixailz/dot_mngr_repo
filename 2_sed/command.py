@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -19,5 +19,5 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -d -m755 /usr/share/doc/sed-{self.version}")
-	self.cmd_run(f"install -m644 doc/sed.html /usr/share/doc/sed-{self.version}")
+	self.cmd_run(f"install -d -m755 {PREFIX}/share/doc/sed-{self.version}")
+	self.cmd_run(f"install -m644 doc/sed.html {PREFIX}/share/doc/sed-{self.version}")

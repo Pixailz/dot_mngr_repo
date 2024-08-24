@@ -14,7 +14,7 @@ def configure(self):
 		 " -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'"
 		 " -i etc/login.defs"
 	)
-	self.cmd_run("touch /usr/bin/passwd")
+	self.cmd_run(f"touch {PREFIX}/bin/passwd")
 	self.cmd_run(
 		 "./configure"
 		 " --sysconfdir=/etc"
@@ -28,7 +28,7 @@ def compile(self):
 	self.cmd_run("make")
 
 def install(self):
-	self.cmd_run("make exec_prefix=/usr install")
+	self.cmd_run(f"make exec_prefix={PREFIX} install")
 	self.cmd_run("make -C man install-man")
 	self.cmd_run("pwconv")
 	self.cmd_run("grpconv")

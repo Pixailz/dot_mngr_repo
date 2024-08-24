@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		 " --enable-libgdbm-compat"
 	)

@@ -6,10 +6,10 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		f" --sysconfdir=/etc"
-		f" --docdir=/usr/share/doc/attr-{self.version}"
+		f" --docdir={PREFIX}/share/doc/attr-{self.version}"
 	)
 
 def compile(self):

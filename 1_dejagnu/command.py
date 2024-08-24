@@ -7,7 +7,7 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "../configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -19,8 +19,8 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -v -dm755 /usr/share/doc/dejagnu-{self.version}")
+	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/dejagnu-{self.version}")
 	self.cmd_run(
 		 "install -v -m644 doc/dejagnu.{html,txt}"
-		f" /usr/share/doc/dejagnu-{self.version}"
+		f" {PREFIX}/share/doc/dejagnu-{self.version}"
 	)

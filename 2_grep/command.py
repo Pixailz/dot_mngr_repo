@@ -7,7 +7,7 @@ def configure(self):
 	self.cmd_run("sed -i 's/echo/#echo/' src/egrep.sh")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):

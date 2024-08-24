@@ -7,7 +7,7 @@ def configure(self):
 	self.cmd_run("sed -i 's:\\\\\\${:\\\\\\$\\\\{:' intltool-update.in")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -18,4 +18,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool-{self.version}/I18N-HOWTO")
+	self.cmd_run(f"install -v -Dm644 doc/I18N-HOWTO {PREFIX}/share/doc/intltool-{self.version}/I18N-HOWTO")

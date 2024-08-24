@@ -6,9 +6,9 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/expat-{self.version}"
+		f" --docdir={PREFIX}/share/doc/expat-{self.version}"
 	)
 
 def compile(self):
@@ -21,5 +21,5 @@ def install(self):
 	self.cmd_run("make install")
 	self.cmd_run(
 		 "install -v -m644 doc/*.{html,css}"
-		f" /usr/share/doc/expat-{self.version}"
+		f" {PREFIX}/share/doc/expat-{self.version}"
 	)

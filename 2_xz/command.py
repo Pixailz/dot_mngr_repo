@@ -6,9 +6,9 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/xz-{self.version}"
+		f" --docdir={PREFIX}/share/doc/xz-{self.version}"
 	)
 
 def compile(self):
@@ -18,4 +18,4 @@ def check(self):
 	self.cmd_run("make check")
 
 def install(self):
-	self.cmd_run('make install')
+	self.cmd_run("make install")

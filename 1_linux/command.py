@@ -2,111 +2,48 @@
 
 from dot_mngr import *
 
-class Kernel():
+def configure_kernel(self):
+	self.kernel.config("WERROR", "n")
+	self.kernel.config("PSI", "y")
+	self.kernel.config("PSI_DEFAULT_DISABLED", "n")
+	self.kernel.config("IKHEADERS", "n")
+	self.kernel.config("CGROUPS", "y")
+	self.kernel.config("MEMCG", "y")
+	self.kernel.config("GROUP_SCHED", "y")
+	self.kernel.config("RT_GROUP_SCHED", "n")
+	self.kernel.config("EXPERT", "n")
 
-	def __init__(self, conf_path):
-		self.conf_path = conf_path
+	self.kernel.config("RELOCATABLE", "y")
+	self.kernel.config("RANDOMIZE_BASE", "y")
 
-	def config(self, key, value, prefix="CONFIG_"):
-		with open(self.conf_path, "r") as f:
-			file_str = f.read()
+	self.kernel.config("STACKPROTECTOR", "y")
+	self.kernel.config("STACKPROTECTOR_STRONG", "y")
 
-		if prefix + key not in file_str:
-			file_str += f"# {prefix}{key} is not set\n"
+	self.kernel.config("NET", "y")
+	self.kernel.config("INET", "y")
+	self.kernel.config("IPV6", "y")
 
-		pre_key = f"{prefix}{key}"
-		file_str = re.sub(
-			r".*" + re.escape(f"{pre_key}") + r"[ =].*",
-			f"{pre_key}={value}",
-			file_str
-		)
+	self.kernel.config("UEVENT_HELPER", "n")
+	self.kernel.config("DEVTMPFS", "y")
+	self.kernel.config("DEVTMPFS_MOUNT", "y")
 
-		with open(self.conf_path, "w") as f:
-			f.write(file_str)
+	self.kernel.config("FW_LOADER", "y")
+	self.kernel.config("FW_LOADER_USER_HELPER", "n")
+	self.kernel.config("DMIID", "y")
 
-def configure(self):
-	self.chroot()
-	self.cmd_run(
-		 "make mrproper &&"
-		 " make defconfig"
-	)
+	self.kernel.config("DRM", "y")
+	self.kernel.config("DRM_FBDEV_EMULATION", "y")
+	self.kernel.config("FRAMEBUFFER_CONSOLE", "y")
 
-	kernel = Kernel(f"/sources/{os.path.basename(self.tar_folder)}/.config")
+	self.kernel.config("INOTIFY_USER", "y")
+	self.kernel.config("TMPFS", "y")
+	self.kernel.config("TMPFS_POSIX_ACL", "y")
 
-	kernel.config("WERROR", "n")
-	kernel.config("PSI", "y")
-	kernel.config("PSI_DEFAULT_DISABLED", "n")
-	kernel.config("IKHEADERS", "n")
-	kernel.config("CGROUPS", "y")
-	kernel.config("MEMCG", "y")
-	kernel.config("GROUP_SCHED", "y")
-	kernel.config("RT_GROUP_SCHED", "n")
-	kernel.config("EXPERT", "n")
+	self.kernel.config("X86_X2APIC", "y")
+	self.kernel.config("PCI", "y")
+	self.kernel.config("PCI_MSI", "y")
+	self.kernel.config("IOMMU_SUPPORT", "y")
+	self.kernel.config("IRQ_REMAP", "y")
 
-	kernel.config("RELOCATABLE", "y")
-	kernel.config("RANDOMIZE_BASE", "y")
-
-	kernel.config("STACKPROTECTOR", "y")
-	kernel.config("STACKPROTECTOR_STRONG", "y")
-
-	kernel.config("NET", "y")
-	kernel.config("INET", "y")
-	kernel.config("IPV6", "y")
-
-	kernel.config("UEVENT_HELPER", "n")
-	kernel.config("DEVTMPFS", "y")
-	kernel.config("DEVTMPFS_MOUNT", "y")
-
-	kernel.config("FW_LOADER", "y")
-	kernel.config("FW_LOADER_USER_HELPER", "n")
-	kernel.config("DMIID", "y")
-
-	kernel.config("DRM", "y")
-	kernel.config("DRM_FBDEV_EMULATION", "y")
-	kernel.config("FRAMEBUFFER_CONSOLE", "y")
-
-	kernel.config("INOTIFY_USER", "y")
-	kernel.config("TMPFS", "y")
-	kernel.config("TMPFS_POSIX_ACL", "y")
-
-	kernel.config("X86_X2APIC", "y")
-	kernel.config("PCI", "y")
-	kernel.config("PCI_MSI", "y")
-	kernel.config("IOMMU_SUPPORT", "y")
-	kernel.config("IRQ_REMAP", "y")
-
-	kernel.config("HIGHMEM64G", "y")
-	kernel.config("BLK_DEV_NVME", "y")
-
-	self.localversion = os.getenv("DISTRO_CODENAME")
-	self.vmlinuz = os.getenv("VMLINUZ")
-
-	print(f"{self.localversion = }")
-	if self.localversion:
-		kernel.config("LOCALVERSION", f'"-{self.localversion}"')
-		kernel.config("LOCALVERSION_AUTO", "y")
-
-	self.cmd_run(
-		 "rm -rf"
-		f" /boot/System.map-{self.version}"
-		f" /boot/{self.vmlinuz}"
-		f" /boot/config-{self.version}"
-		f" /usr/share/doc/linux-{self.version}"
-	)
-
-
-def compile(self):
-	self.cmd_run("yes '' | make")
-
-def install(self):
-	self.cmd_run("make modules_install")
-	self.cmd_run(f"cp -fiv System.map /boot/System.map-{self.version}")
-	self.cmd_run(f"cp -fiv arch/x86/boot/bzImage /boot/{self.vmlinuz}")
-	self.cmd_run(f"cp -fiv .config /boot/config-{self.version}")
-	self.cmd_run(f"cp -fr Documentation -T /usr/share/doc/linux-{self.version}")
-
-	self.cmd_run(f"tar -xf /sources/{self.file_name} -C /usr/src")
-	self.cmd_run(
-		f'mv "/usr/src/{os.path.basename(self.tar_folder)}"'
-		f' "/usr/src/kernel-{self.version}"'
-	)
+	self.kernel.config("HIGHMEM64G", "y")
+	self.kernel.config("BLK_DEV_NVME", "y")

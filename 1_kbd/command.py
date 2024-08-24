@@ -10,7 +10,7 @@ def configure(self):
 	self.cmd_run("sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-vlock"
 	)
 
@@ -22,4 +22,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"cp -R -v docs/doc -T /usr/share/doc/kbd-{self.version}")
+	self.cmd_run(f"cp -R -v docs/doc -T {PREFIX}/share/doc/kbd-{self.version}")

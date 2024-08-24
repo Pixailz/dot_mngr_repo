@@ -9,14 +9,14 @@ def configure(self):
 	self.apply_patch("glibc-2.40-fhs-1", "-Np1")
 	self.take_build()
 	self.cmd_run(
-		 "echo 'rootsbindir=/usr/sbin' > configparms &&"
+		f"echo 'rootsbindir={PREFIX}/sbin' > configparms &&"
 		 " ../configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-werror"
 		 " --enable-kernel=4.19"
 		 " --enable-stack-protector=strong"
 		 " --disable-nscd"
-		 " libc_cv_slibdir=/usr/lib"
+		f" libc_cv_slibdir={PREFIX}/lib"
 	)
 
 def compile(self):
@@ -30,8 +30,8 @@ def install(self):
 		 "touch /etc/ld.so.conf &&"
 		 " sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile &&"
 		 " make install &&"
-		 " sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd &&"
-		 " mkdir -pv /usr/lib/locale &&"
+		f" sed '/RTLDLIST=/s@{PREFIX}@@g' -i {PREFIX}/bin/ldd &&"
+		f" mkdir -pv {PREFIX}/lib/locale &&"
 		 " localedef -i C -f UTF-8 C.UTF-8 &&"
 		 " localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8 &&"
 		 " localedef -i de_DE -f ISO-8859-1 de_DE &&"
@@ -69,17 +69,17 @@ def install(self):
 	)
 	extract_file_from_package("1_tzdata", os.path.join(self.tar_folder, "build"), self.chrooted)
 	self.cmd_run(
-		"export ZONEINFO=/usr/share/zoneinfo && "
-		" mkdir -pv ${ZONEINFO}/{posix,right} && "
-		" for tz in etcetera southamerica northamerica europe africa antarctica asia australasia backward; do "
-		" zic -L /dev/null -d ${ZONEINFO} ${tz} && "
-		" zic -L /dev/null -d ${ZONEINFO}/posix ${tz} && "
-		" zic -L leapseconds -d ${ZONEINFO}/right ${tz}; done && "
-		" cp -v zone.tab zone1970.tab iso3166.tab ${ZONEINFO} && "
-		" zic -d ${ZONEINFO} -p America/New_York"
+		f"export ZONEINFO={PREFIX}/share/zoneinfo && "
+		 " mkdir -pv ${ZONEINFO}/{posix,right} && "
+		 " for tz in etcetera southamerica northamerica europe africa antarctica asia australasia backward; do "
+		 " zic -L /dev/null -d ${ZONEINFO} ${tz} && "
+		 " zic -L /dev/null -d ${ZONEINFO}/posix ${tz} && "
+		 " zic -L leapseconds -d ${ZONEINFO}/right ${tz}; done && "
+		 " cp -v zone.tab zone1970.tab iso3166.tab ${ZONEINFO} && "
+		 " zic -d ${ZONEINFO} -p America/New_York"
 	)
 	# self.cmd_run(
-	# 	"export ZONEINFO=/usr/share/zoneinfo && "
+	# 	f"export ZONEINFO={PREFIX}/share/zoneinfo && "
 	# 	" mkdir -pv ${ZONEINFO}/{posix,right} && "
 	# 	" for tz in etcetera southamerica northamerica europe africa antarctica asia australasia backward pacificnew systemv; do "
 	# 	" zic -L /dev/null -d ${ZONEINFO} ${tz} && "

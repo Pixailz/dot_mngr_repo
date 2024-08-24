@@ -11,24 +11,24 @@ def configure(self):
 		SYSTEMD_FLAG = "--without-systemd{,systemunitdir}"
 
 	self.cmd_run(
-		"./configure"
-		" --bindir=/usr/bin"
-		" --libdir=/usr/lib"
-		" --runstatedir=/run"
-		" --sbindir=/usr/sbin"
-        " --disable-chfn-chsh"
-        " --disable-login"
-        " --disable-nologin"
-        " --disable-su"
-        " --disable-setpriv"
-        " --disable-runuser"
-        " --disable-pylibmount"
-        " --disable-liblastlog2"
-        " --disable-static"
-        " --without-python" +
-		SYSTEMD_FLAG +
-        " ADJTIME_PATH=/var/lib/hwclock/adjtime"
-       f" --docdir=/usr/share/doc/util-linux-{self.version}"
+		 "./configure"
+		f" --bindir={PREFIX}/bin"
+		f" --libdir={PREFIX}/lib"
+		 " --runstatedir=/run"
+		f" --sbindir={PREFIX}/sbin"
+         " --disable-chfn-chsh"
+         " --disable-login"
+         " --disable-nologin"
+         " --disable-su"
+         " --disable-setpriv"
+         " --disable-runuser"
+         " --disable-pylibmount"
+         " --disable-liblastlog2"
+         " --disable-static"
+         " --without-python" +
+		 SYSTEMD_FLAG +
+         " ADJTIME_PATH=/var/lib/hwclock/adjtime"
+        f" --docdir={PREFIX}/share/doc/util-linux-{self.version}"
 	)
 
 def compile(self):

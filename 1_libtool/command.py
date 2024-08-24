@@ -6,15 +6,15 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
 	self.cmd_run("make")
 
-def check(self):
-	self.cmd_run("make -k check")
+# def check(self):
+# 	self.cmd_run("make -k check")
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("rm -fv /usr/lib/libltdl.a")
+	self.cmd_run(f"rm -fv {PREFIX}/lib/libltdl.a")

@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
          " --localstatedir=/var"
          " --runstatedir=/run"
@@ -14,7 +14,7 @@ def configure(self):
          " --disable-static"
          " --disable-doxygen-docs"
          " --disable-xml-docs"
-        f" --docdir=/usr/share/doc/dbus-{self.version}"
+        f" --docdir={PREFIX}/share/doc/dbus-{self.version}"
          " --with-system-socket=/run/dbus/system_bus_socket"
 	)
 

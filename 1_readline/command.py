@@ -13,10 +13,10 @@ def configure(self):
 	# self.apply_patch("readline-8.2-upstream_fixes-3", "-Np1")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		 " --with-curses"
-		f" --docdir=/usr/share/doc/readline-{self.version}"
+		f" --docdir={PREFIX}/share/doc/readline-{self.version}"
 	)
 
 def compile(self):
@@ -26,5 +26,5 @@ def install(self):
 	self.cmd_run("make SHLIB_LIBS='-lncursesw' install")
 	self.cmd_run(
 		 " install -v -m644 doc/*.{ps,pdf,html,dvi}"
-		f" /usr/share/doc/readline-{self.version}"
+		f" {PREFIX}/share/doc/readline-{self.version}"
 	)

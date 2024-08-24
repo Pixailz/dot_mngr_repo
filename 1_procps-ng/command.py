@@ -9,8 +9,8 @@ def configure(self):
 
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		f" --docdir=/usr/share/doc/procps-ng-{self.version}"
+		f" --prefix={PREFIX}"
+		f" --docdir={PREFIX}/share/doc/procps-ng-{self.version}"
 		 " --disable-static"
 		 " --disable-kill" +
 		 SYSTEMD_FLAG

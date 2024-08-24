@@ -6,10 +6,11 @@ def configure(self):
 	self.chroot()
 
 def compile(self):
-	self.cmd_run("make prefix=/usr")
+	self.cmd_run(f"make prefix={PREFIX}")
 
 def check(self):
 	self.cmd_run("make check")
 
 def install(self):
-	self.cmd_run('make prefix=/usr install && rm -fv /usr/lib/libzstd.a')
+	self.cmd_run(f"make prefix={PREFIX} install")
+	self.cmd_run(f"rm -fv {PREFIX}/lib/libzstd.a")

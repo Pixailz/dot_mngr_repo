@@ -11,6 +11,6 @@ def compile(self):
 	self.cmd_run("make NETNS_RUN_DIR=/run/netns")
 
 def install(self):
-	self.cmd_run("make SBINDIR=/usr/sbin install")
-	self.cmd_run(f"mkdir -pv /usr/share/doc/iproute2-{self.version}")
-	self.cmd_run(f"cp -v COPYING README* /usr/share/doc/iproute2-{self.version}")
+	self.cmd_run(f"make SBINDIR={PREFIX}/sbin install")
+	self.cmd_run(f"mkdir -pv {PREFIX}/share/doc/iproute2-{self.version}")
+	self.cmd_run(f"cp -v COPYING README* {PREFIX}/share/doc/iproute2-{self.version}")

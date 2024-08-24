@@ -3,16 +3,16 @@
 from dot_mngr import *
 
 def configure(self):
-	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_path(f"{ROOT_PATH}/tools/bin")
 	self.add_env({
 		"LC_ALL": "POSIX",
-		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
 	self.take_build()
 	self.cmd_run(
 		 "../configure"
-		f" --prefix={PREFIX}/tools"
-		f" --with-sysroot={PREFIX}"
+		f" --prefix={ROOT_PATH}/tools"
+		f" --with-sysroot={ROOT_PATH}"
 		f" --target={TARGET_TRIPLET}"
 		 " --disable-nls"
 		 " --enable-gprofng=no"

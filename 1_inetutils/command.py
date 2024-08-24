@@ -8,8 +8,8 @@ def configure(self):
 	self.cmd_run("sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		 " --bindir=/usr/bin"
+		f" --prefix={PREFIX}"
+		f" --bindir={PREFIX}/bin"
 		 " --localstatedir=/var"
 		 " --disable-logger"
 		 " --disable-whois"

@@ -6,14 +6,14 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		f" --docdir=/usr/share/doc/man-db-{self.version}"
+		f" --prefix={PREFIX}"
+		f" --docdir={PREFIX}/share/doc/man-db-{self.version}"
 		 " --sysconfdir=/etc"
 		 " --disable-setuid"
 		 " --enable-cache-owner=bin"
-		 " --with-browser=/usr/bin/lynx"
-		 " --with-vgrind=/usr/bin/vgrind"
-		 " --with-grap=/usr/bin/grap"
+		f" --with-browser={PREFIX}/bin/lynx"
+		f" --with-vgrind={PREFIX}/bin/vgrind"
+		f" --with-grap={PREFIX}/bin/grap"
 	)
 
 def compile(self):

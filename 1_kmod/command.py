@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
 		 " --with-openssl"
 		 " --with-xz"
@@ -22,8 +22,8 @@ def install(self):
 	self.cmd_run("make install")
 	self.cmd_run(
 		 "for target in depmod insmod modinfo modprobe rmmod; do"
-		 " ln -sfv ../bin/kmod /usr/sbin/$target;"
-		 " rm -fv /usr/bin/$target;"
+		f" ln -sfv ../bin/kmod {PREFIX}/sbin/$target;"
+		f" rm -fv {PREFIX}/bin/$target;"
 		 " done"
 	)
-	self.cmd_run("ln -sfv kmod /usr/bin/lsmod")
+	self.cmd_run(f"ln -sfv kmod {PREFIX}/bin/lsmod")

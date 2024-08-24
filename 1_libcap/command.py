@@ -7,10 +7,10 @@ def configure(self):
 	self.cmd_run("sed -i '/install -m.*STA/d' libcap/Makefile")
 
 def compile(self):
-	self.cmd_run("make prefix=/usr lib=lib")
+	self.cmd_run(f"make prefix={PREFIX} lib=lib")
 
 def check(self):
 	self.cmd_run("make test")
 
 def install(self):
-	self.cmd_run("make prefix=/usr lib=lib install")
+	self.cmd_run(f"make prefix={PREFIX} lib=lib install")

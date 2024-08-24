@@ -6,10 +6,10 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		f"./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 		 " --enable-thread-safe"
-		f" --docdir=/usr/share/doc/mpfr-{self.version}"
+		f" --docdir={PREFIX}/share/doc/mpfr-{self.version}"
 	)
 
 def compile(self):

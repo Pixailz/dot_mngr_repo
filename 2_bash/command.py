@@ -23,11 +23,11 @@ def configure(self):
 	# apply_patchs(self)
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --without-bash-malloc"
 		 " --with-installed-readline"
 		 " bash_cv_strtold_broken=no"
-		f" --docdir=/usr/share/doc/bash-{self.version}"
+		f" --docdir={PREFIX}/share/doc/bash-{self.version}"
 	)
 
 def compile(self):
@@ -44,7 +44,7 @@ def check(self):
 		"EOF"
 	)
 	self.cmd_run("chown -R tester .")
-	self.cmd_run("su -s /usr/bin/expect tester </tmp/e")
+	self.cmd_run(f"su -s {PREFIX}/bin/expect tester </tmp/e")
 	self.cmd_run("rm -rf /tmp/e")
 
 def install(self):

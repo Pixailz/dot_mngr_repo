@@ -6,9 +6,9 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/acl-{self.version}"
+		f" --docdir={PREFIX}/share/doc/acl-{self.version}"
 	)
 
 def compile(self):

@@ -6,9 +6,9 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/gettext-{self.version}"
+		f" --docdir={PREFIX}/share/doc/gettext-{self.version}"
 	)
 
 def compile(self):
@@ -19,4 +19,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("chmod -v 0755 /usr/lib/preloadable_libintl.so")
+	self.cmd_run(f"chmod -v 0755 {PREFIX}/lib/preloadable_libintl.so")

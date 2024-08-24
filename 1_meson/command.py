@@ -22,5 +22,5 @@ def install(self):
 		 " --find-links dist"
 		 " meson"
 	)
-	self.cmd_run("install -vDm644 data/shell-completions/bash/meson /usr/share/bash-completion/completions/meson")
-	self.cmd_run("install -vDm644 data/shell-completions/zsh/_meson /usr/share/zsh/site-functions/_meson")
+	self.cmd_run(f"install -vDm644 data/shell-completions/bash/meson {PREFIX}/share/bash-completion/completions/meson")
+	self.cmd_run(f"install -vDm644 data/shell-completions/zsh/_meson {PREFIX}/share/zsh/site-functions/_meson")

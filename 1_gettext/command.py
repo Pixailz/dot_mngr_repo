@@ -13,4 +13,7 @@ def compile(self):
 	self.cmd_run("make")
 
 def install(self):
-	self.cmd_run("cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /usr/bin")
+	self.cmd_run(
+		 "cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} "
+		f"{PREFIX}/bin"
+	)

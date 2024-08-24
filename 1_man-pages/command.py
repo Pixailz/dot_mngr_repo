@@ -7,4 +7,4 @@ def configure(self):
 	self.cmd_run("rm -v man3/crypt*")
 
 def install(self):
-	self.cmd_run("make prefix=/usr install")
+	self.cmd_run(f"make prefix={PREFIX} install")

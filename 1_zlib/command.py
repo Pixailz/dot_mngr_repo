@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 	)
 
 def compile(self):
@@ -17,4 +17,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("rm -fv /usr/lib/libz.a")
+	self.cmd_run(f"rm -fv {PREFIX}/lib/libz.a")

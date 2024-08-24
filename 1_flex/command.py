@@ -6,8 +6,8 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		f" --docdir=/usr/share/doc/flex-{self.version}"
+		f" --prefix={PREFIX}"
+		f" --docdir={PREFIX}/share/doc/flex-{self.version}"
 		 " --disable-static"
 	)
 
@@ -19,5 +19,5 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("ln -sfv flex /usr/bin/lex")
-	self.cmd_run("ln -sfv flex.1 /usr/share/man/man1/lex.1")
+	self.cmd_run(f"ln -sfv flex {PREFIX}/bin/lex")
+	self.cmd_run(f"ln -sfv flex.1 {PREFIX}/share/man/man1/lex.1")

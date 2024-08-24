@@ -6,8 +6,8 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		f" --docdir=/usr/share/doc/bison-{self.version}"
+		f" --prefix={PREFIX}"
+		f" --docdir={PREFIX}/share/doc/bison-{self.version}"
 	)
 
 def compile(self):

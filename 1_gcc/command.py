@@ -3,10 +3,10 @@
 from dot_mngr import *
 
 def configure(self):
-	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_path(f"{ROOT_PATH}/tools/bin")
 	self.add_env({
 		"LC_ALL": "POSIX",
-		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
 	extract_file_from_package("1_mpfr", self.tar_folder)
 	extract_file_from_package("1_gmp", self.tar_folder)
@@ -25,9 +25,9 @@ def configure(self):
 	self.cmd_run(
 		 "../configure"
 		f" --target={TARGET_TRIPLET}"
-		f" --prefix={PREFIX}/tools"
+		f" --prefix={ROOT_PATH}/tools"
 		f" --with-glibc-version={get_version_from_package('1_glibc')}"
-		f" --with-sysroot={PREFIX}"
+		f" --with-sysroot={ROOT_PATH}"
 		 " --with-newlib"
 		 " --without-headers"
 		 " --enable-default-pie"
@@ -53,6 +53,5 @@ def install(self):
 	self.take_tar_folder()
 	self.cmd_run(
 		 "cat gcc/limitx.h gcc/glimits.h gcc/limity.h >"
-		f" \"$(dirname \"$(\"{TARGET_TRIPLET}-gcc\" -print-libgcc-file-name)\")\""
-		 "/include/limits.h"
+		f" $(dirname $({TARGET_TRIPLET}-gcc -print-libgcc-file-name))/include/limits.h"
 	)

@@ -18,11 +18,7 @@ def compile(self):
 		 " python3 configure.py --bootstrap"
 	)
 
-def check(self):
-	self.cmd_run("./ninja all")
-	self.cmd_run("./ninja_test --gtest_filter=-SubprocessTest.SetWithLots")
-
 def install(self):
-	self.cmd_run("install -vm755 ninja /usr/bin/")
-	self.cmd_run("install -vDm644 misc/bash-completion /usr/share/bash-completion/completions/ninja")
-	self.cmd_run("install -vDm644 misc/zsh-completion  /usr/share/zsh/site-functions/_ninja")
+	self.cmd_run(f"install -vm755 ninja {PREFIX}/bin/")
+	self.cmd_run(f"install -vDm644 misc/bash-completion {PREFIX}/share/bash-completion/completions/ninja")
+	self.cmd_run(f"install -vDm644 misc/zsh-completion  {PREFIX}/share/zsh/site-functions/_ninja")

@@ -6,9 +6,9 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		f"./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/mpc-{self.version}"
+		f" --docdir={PREFIX}/share/doc/mpc-{self.version}"
 	)
 
 def compile(self):

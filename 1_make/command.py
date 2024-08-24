@@ -3,21 +3,21 @@
 from dot_mngr import *
 
 def configure(self):
-	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_path(f"{ROOT_PATH}/tools/bin")
 	self.add_env({
 		"LC_ALL": "POSIX",
-		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --without-guile"
-		f' --host="{TARGET_TRIPLET}"'
-		 ' --build="$(build-aux/config.guess)"'
+		f" --host={TARGET_TRIPLET}"
+		 " --build=$(build-aux/config.guess)"
 	)
 
 def compile(self):
 	self.cmd_run("make")
 
 def install(self):
-	self.cmd_run(f'make DESTDIR="{PREFIX}" install')
+	self.cmd_run(f"make DESTDIR={ROOT_PATH} install")

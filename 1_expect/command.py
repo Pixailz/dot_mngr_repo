@@ -11,12 +11,12 @@ def configure(self):
 	self.apply_patch("expect-5.45.4-gcc14-1", "-Np1")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
-		 " --with-tcl=/usr/lib"
+		f" --prefix={PREFIX}"
+		f" --with-tcl={PREFIX}/lib"
 		 " --enable-shared"
 		 " --disable-rpath"
-		 " --mandir=/usr/share/man"
-		 " --with-tclinclude=/usr/include"
+		f" --mandir={PREFIX}/share/man"
+		f" --with-tclinclude={PREFIX}/include"
 	)
 
 def compile(self):
@@ -27,4 +27,4 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run(f"ln -svf expect{self.version}/libexpect{self.version}.so /usr/lib")
+	self.cmd_run(f"ln -svf expect{self.version}/libexpect{self.version}.so {PREFIX}/lib")

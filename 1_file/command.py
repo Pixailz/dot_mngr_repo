@@ -3,10 +3,10 @@
 from dot_mngr import *
 
 def configure(self):
-	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_path(f"{ROOT_PATH}/tools/bin")
 	self.add_env({
 		"LC_ALL": "POSIX",
-		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
 	self.take_build()
 	self.cmd_run(
@@ -19,14 +19,14 @@ def configure(self):
 	self.take_tar_folder()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		f" --host={TARGET_TRIPLET}"
-		 ' --build="$(./config.guess)"'
+		 " --build=$(./config.guess)"
 	)
 
 def compile(self):
-	self.cmd_run(f'make FILE_COMPILE={self.tar_folder}/build/src/file')
+	self.cmd_run(f"make FILE_COMPILE={self.tar_folder}/build/src/file")
 
 def install(self):
-	self.cmd_run(f'make DESTDIR="{PREFIX}" install')
-	self.cmd_run(f"rm -rf {PREFIX}/usr/lib/libmagic.la")
+	self.cmd_run(f"make DESTDIR={ROOT_PATH} install")
+	self.cmd_run(f"rm -rf {ROOT_PATH}{PREFIX}/lib/libmagic.la")

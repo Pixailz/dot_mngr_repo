@@ -3,10 +3,10 @@
 from dot_mngr import *
 
 def configure(self):
-	self.add_path(f"{PREFIX}/tools/bin")
+	self.add_path(f"{ROOT_PATH}/tools/bin")
 	self.add_env({
 		"LC_ALL": "POSIX",
-		"CONFIG_SITE": f"{PREFIX}/usr/share/config.site"
+		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
 	extract_file_from_package("1_mpfr", self.tar_folder)
 	extract_file_from_package("1_gmp", self.tar_folder)
@@ -27,12 +27,12 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "../configure"
-		 ' --build="$(../config.guess)"'
+		 " --build=$(../config.guess)"
 		f" --host={TARGET_TRIPLET}"
 		f" --target={TARGET_TRIPLET}"
-		f' LDFLAGS_FOR_TARGET="-L{self.tar_folder}/build/{TARGET_TRIPLET}/libgcc"'
-		 " --prefix=/usr"
-		f" --with-build-sysroot={PREFIX}"
+		f" LDFLAGS_FOR_TARGET=-L{self.tar_folder}/build/{TARGET_TRIPLET}/libgcc"
+		f" --prefix={PREFIX}"
+		f" --with-build-sysroot={ROOT_PATH}"
 		 " --enable-default-pie"
 		 " --enable-default-ssp"
 		 " --disable-nls"
@@ -50,7 +50,6 @@ def compile(self):
 	self.cmd_run("make")
 
 def install(self):
-	self.take_build()
-	self.cmd_run(f'make DESTDIR="{PREFIX}" install')
-	if not os.path.exists(f"{PREFIX}/usr/bin/cc"):
-		self.cmd_run(f"ln -s gcc {PREFIX}/usr/bin/cc")
+	self.cmd_run(f"make DESTDIR={ROOT_PATH} install")
+	if not os.path.exists(f"{ROOT_PATH}{PREFIX}/bin/cc"):
+		self.cmd_run(f"ln -s gcc {ROOT_PATH}{PREFIX}/bin/cc")

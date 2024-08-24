@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-debuginfod"
 		 " --enable-libdebuginfod=dummy"
 	)
@@ -19,5 +19,5 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make -C libelf install")
-	self.cmd_run("install -vm644 config/libelf.pc /usr/lib/pkgconfig")
-	self.cmd_run("rm /usr/lib/libelf.a")
+	self.cmd_run(f"install -vm644 config/libelf.pc {PREFIX}/lib/pkgconfig")
+	self.cmd_run(f"rm {PREFIX}/lib/libelf.a")

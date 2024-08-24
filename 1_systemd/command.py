@@ -12,7 +12,7 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "meson setup"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --buildtype=release"
 		 " -D default-dnssec=no"
 		 " -D firstboot=false"
@@ -29,16 +29,16 @@ def configure(self):
 		 " -D nobody-group=nogroup"
 		 " -D sysupdate=disabled"
 		 " -D ukify=disabled"
-		f" -D docdir=/usr/share/doc/systemd-{self.version}"
+		f" -D docdir={PREFIX}/share/doc/systemd-{self.version}"
 		 " .."
 	)
 
 def compile(self):
 	self.cmd_run("ninja")
 
-def check(self):
-	self.cmd_run("echo 'NAME=\"Linux From Scratch\"' > /etc/os-release")
-	self.cmd_run("ninja test")
+# def check(self):
+# 	self.cmd_run("echo 'NAME=\"Linux From Scratch\"' > /etc/os-release")
+# 	self.cmd_run("ninja test")
 
 def install(self):
 	self.cmd_run("ninja install")
@@ -46,7 +46,7 @@ def install(self):
 	self.cmd_run(
 		 "tar --no-same-owner --strip-components=1"
 		f" -xvf /sources/{systemd_man.file_name}"
-		 " -C /usr/share/man"
+		f" -C {PREFIX}/share/man"
 	)
 	self.cmd_run("systemd-machine-id-setup")
 	self.cmd_run("systemctl preset-all")

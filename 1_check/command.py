@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
 	)
 
@@ -17,4 +17,4 @@ def check(self):
 	self.cmd_run("make check")
 
 def install(self):
-	self.cmd_run(f"make docdir=/usr/share/doc/check-{self.version} install")
+	self.cmd_run(f"make docdir={PREFIX}/share/doc/check-{self.version} install")

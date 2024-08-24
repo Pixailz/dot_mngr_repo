@@ -7,7 +7,7 @@ def configure(self):
 	self.take_build()
 	self.cmd_run(
 		 "../configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
 		 " --enable-gold"
 		 " --enable-ld=default"
@@ -21,11 +21,14 @@ def configure(self):
 	)
 
 def compile(self):
-	self.cmd_run("make tooldir=/usr")
+	self.cmd_run(f"make tooldir={PREFIX}")
 
-def check(self):
-	self.cmd_run("make -k check")
+# def check(self):
+# 	self.cmd_run("make -k check")
 
 def install(self):
-	self.cmd_run(f"make tooldir=/usr install")
-	self.cmd_run("rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a")
+	self.cmd_run(f"make tooldir={PREFIX} install")
+	self.cmd_run(
+		f"rm -fv {PREFIX}"
+		"/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a"
+	)

@@ -16,10 +16,10 @@ def compile(self):
 
 def install(self):
 	self.cmd_run(
-		 "make PREFIX=/usr install && "
-		 "cp -av libbz2.so.* /usr/lib && "
-		f"ln -fsv libbz2.so.{self.version} /usr/lib/libbz2.so && "
-	 	 "cp -v bzip2-shared /usr/bin/bzip2 && "
-		 "for i in /usr/bin/{bzcat,bunzip2}; do ln -sfv bzip2 $i; done && "
-		 "rm -fv /usr/lib/libbz2.a"
+		f"make PREFIX={PREFIX} install && "
+		f"cp -av libbz2.so.* {PREFIX}/lib && "
+		f"ln -fsv libbz2.so.{self.version} {PREFIX}/lib/libbz2.so && "
+	 	f"cp -v bzip2-shared {PREFIX}/bin/bzip2 && "
+		f"for i in {PREFIX}/bin/""{bzcat,bunzip2}""; do ln -sfv bzip2 $i; done && "
+		f"rm -fv {PREFIX}/lib/libbz2.a"
 	)

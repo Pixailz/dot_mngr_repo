@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --enable-hashes=strong,glibc"
 		 " --enable-obsolete-api=no"
 		 " --disable-static"
@@ -24,11 +24,11 @@ def install(self):
 	self.cmd_run("make distclean")
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --enable-hashes=strong,glibc"
 		 " --enable-obsolete-api=glibc"
 		 " --disable-static"
 		 " --disable-failure-tokens"
 	)
 	self.cmd_run("make")
-	self.cmd_run("cp -av --remove-destination .libs/libcrypt.so.1* /usr/lib")
+	self.cmd_run(f"cp -av --remove-destination .libs/libcrypt.so.1* {PREFIX}/lib")

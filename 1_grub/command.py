@@ -8,7 +8,7 @@ def configure(self):
 	self.cmd_run(
 		 "unset {C,CPP,CXX,LD}FLAGS && "
 		 " ./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --sysconfdir=/etc"
 		 " --disable-efiemu"
 		 " --disable-werror"
@@ -19,4 +19,4 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("unset {C,CPP,CXX,LD}FLAGS; make install")
-	self.cmd_run("mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions")
+	self.cmd_run(f"mv -v /etc/bash_completion.d/grub {PREFIX}/share/bash-completion/completions")

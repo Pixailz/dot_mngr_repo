@@ -4,17 +4,12 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	self.cmd_run(
-		 "./configure"
-		f" --prefix={PREFIX}"
-		f" --docdir={PREFIX}/share/doc/gperf-{self.version}"
-	)
 
 def compile(self):
-	self.cmd_run("make")
+	self.cmd_run(f"make BUILD_STATIC=no PREFIX={PREFIX}")
 
 def check(self):
 	self.cmd_run("make check", 1)
 
 def install(self):
-	self.cmd_run("make install")
+	self.cmd_run(f"make BUILD_STATIC=no PREFIX={PREFIX} install")

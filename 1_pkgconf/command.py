@@ -6,9 +6,9 @@ def configure(self):
 	self.chroot()
 	self.cmd_run(
 		 "./configure"
-		 " --prefix=/usr"
+		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir=/usr/share/doc/pkgconf-{self.version}"
+		f" --docdir={PREFIX}/share/doc/pkgconf-{self.version}"
 	)
 
 def compile(self):
@@ -16,5 +16,5 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.cmd_run("ln -sfv pkgconf /usr/bin/pkg-config")
-	self.cmd_run("ln -sfv pkgconf.1 /usr/share/man/man1/pkg-config.1")
+	self.cmd_run(f"ln -sfv pkgconf {PREFIX}/bin/pkg-config")
+	self.cmd_run(f"ln -sfv pkgconf.1 {PREFIX}/share/man/man1/pkg-config.1")
