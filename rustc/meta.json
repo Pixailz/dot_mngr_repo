@@ -1,0 +1,22 @@
+{
+	"value": "https://fossies.org/linux/misc/rustc",
+	"type": "fossies",
+	"prefix": "rustc-",
+	"suffix": "-src.tar.xz",
+	"link": "https://fossies.org/linux/misc/rustc-1.81.0-src.tar.xz",
+	"version": "1.81.0",
+	"patchs": null,
+	"files": [
+		"cargo-clippy",
+		"cargo-fmt",
+		"cargo",
+		"clippy-driver",
+		"rust-gdb",
+		"rust-gdbgui",
+		"rust-lldb",
+		"rustc",
+		"rustdoc",
+		"rustfmt"
+	],
+	"dependencies": null
+}

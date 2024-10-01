@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXft-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXft-2.3.8.tar.xz",
+	"version": "2.3.8",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

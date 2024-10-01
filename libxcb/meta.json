@@ -1,0 +1,13 @@
+{
+	"value": "https://xorg.freedesktop.org/archive/individual/lib",
+	"type": "apache",
+	"prefix": "libxcb-",
+	"suffix": ".tar.xz",
+	"link": "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz",
+	"version": "1.17.0",
+	"patchs": null,
+	"files": [
+		"/lib/libxcb.so"
+	],
+	"dependencies": null
+}

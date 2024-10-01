@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXpresent-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXpresent-1.0.1.tar.xz",
+	"version": "1.0.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

@@ -1,0 +1,14 @@
+{
+	"value": "svaarala/duktape",
+	"type": "github",
+	"prefix": "duktape-",
+	"suffix": ".tar.xz",
+	"link": "https://github.com/svaarala/duktape/releases/download/v2.7.0/duktape-2.7.0.tar.xz",
+	"version": "2.7.0",
+	"patchs": null,
+	"files": [
+		"/lib/libduktape.so",
+		"/lib/libduktaped.so"
+	],
+	"dependencies": null
+}

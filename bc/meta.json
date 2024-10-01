@@ -3,8 +3,8 @@
 	"type": "github",
 	"prefix": "bc-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/gavinhoward/bc/releases/download/7.0.0/bc-7.0.0.tar.gz",
-	"version": "7.0.0",
+	"link": "https://github.com/gavinhoward/bc/releases/download/7.0.3/bc-7.0.3.tar.gz",
+	"version": "7.0.3",
 	"patchs": null,
 	"files": [
 		"bc",

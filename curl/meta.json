@@ -3,8 +3,8 @@
 	"type": "github",
 	"prefix": "curl-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/curl/curl/releases/download/curl-8_9_1/curl-8.9.1.tar.gz",
-	"version": "8.9.1",
+	"link": "https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.gz",
+	"version": "8.10.1",
 	"patchs": null,
 	"files": [
 		"curl",

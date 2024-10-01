@@ -1,0 +1,26 @@
+{
+	"value": "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz",
+	"type": "no_scrap",
+	"prefix": "gtk+-",
+	"suffix": ".tar.xz",
+	"link": "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz",
+	"version": "3.24.43",
+	"patchs": null,
+	"files": [
+		"broadwayd",
+		"gtk3-demo",
+		"gtk3-demo-application",
+		"gtk3-icon-browser",
+		"gtk3-widget-factory",
+		"gtk-builder-tool",
+		"gtk-encode-symbolic-svg",
+		"gtk-launch",
+		"gtk-query-immodules-3.0",
+		"gtk-query-settings",
+		"gtk-update-icon-cache",
+		"/lib/libgailutil-3.so",
+		"/lib/libgdk-3.so",
+		"/lib/libgtk-3.so"
+	],
+	"dependencies": null
+}

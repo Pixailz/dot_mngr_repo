@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXaw-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXaw-1.0.16.tar.xz",
+	"version": "1.0.16",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

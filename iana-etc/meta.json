@@ -3,8 +3,8 @@
 	"type": "github",
 	"prefix": "iana-etc-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/Mic92/iana-etc/releases/download/20240813/iana-etc-20240813.tar.gz",
-	"version": "20240813",
+	"link": "https://github.com/Mic92/iana-etc/releases/download/20240923/iana-etc-20240923.tar.gz",
+	"version": "20240923",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

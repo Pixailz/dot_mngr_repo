@@ -1,0 +1,16 @@
+{
+	"value": "https://www.freedesktop.org/software/desktop-file-utils/releases",
+	"type": "apache",
+	"prefix": "desktop-file-utils-",
+	"suffix": ".tar.xz",
+	"link": "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.27.tar.xz",
+	"version": "0.27",
+	"patchs": null,
+	"files": [
+		"desktop-file-edit",
+		"desktop-file-install",
+		"desktop-file-validate",
+		"update-desktop-database"
+	],
+	"dependencies": null
+}

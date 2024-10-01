@@ -3,8 +3,8 @@
 	"type": "github_tag",
 	"prefix": "icu-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz",
-	"version": "75",
+	"link": "https://github.com/unicode-org/icu/archive/refs/tags/release-76-rc.tar.gz",
+	"version": "76",
 	"patchs": null,
 	"files": [
 		"derb",

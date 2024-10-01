@@ -1,0 +1,15 @@
+{
+	"value": "https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz",
+	"type": "no_scrap",
+	"prefix": "polkit-gnome-",
+	"suffix": ".tar.xz",
+	"link": "https://download.gnome.org/sources/polkit-gnome/0.105/polkit-gnome-0.105.tar.xz",
+	"version": "0.105",
+	"patchs": {
+		"consolidated_fixes": "https://www.linuxfromscratch.org/patches/blfs/svn/polkit-gnome-0.105-consolidated_fixes-1.patch"
+	},
+	"files": [
+		"polkit-gnome-authentication-agent-1"
+	],
+	"dependencies": null
+}

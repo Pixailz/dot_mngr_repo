@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXmu-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXmu-1.2.1.tar.xz",
+	"version": "1.2.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

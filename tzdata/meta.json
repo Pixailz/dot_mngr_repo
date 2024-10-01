@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "tzdata",
 	"suffix": ".tar.gz",
-	"link": "https://data.iana.org/time-zones/releases/tzdata2024a.tar.gz",
-	"version": "2024a",
+	"link": "https://data.iana.org/time-zones/releases/tzdata2024b.tar.gz",
+	"version": "2024b",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

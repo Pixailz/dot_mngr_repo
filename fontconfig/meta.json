@@ -1,0 +1,22 @@
+{
+	"value": "https://www.freedesktop.org/software/fontconfig/release",
+	"type": "apache",
+	"prefix": "fontconfig-",
+	"suffix": ".tar.gz",
+	"link": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.gz",
+	"version": "2.15.0",
+	"patchs": null,
+	"files": [
+		"fc-cache",
+		"fc-cat",
+		"fc-conflist",
+		"fc-list",
+		"fc-match",
+		"fc-pattern",
+		"fc-query",
+		"fc-scan",
+		"fc-validate",
+		"/lib/libfontconfig.so"
+	],
+	"dependencies": null
+}

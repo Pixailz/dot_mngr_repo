@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libxkbfile-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libxkbfile-1.1.3.tar.xz",
+	"version": "1.1.3",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

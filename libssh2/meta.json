@@ -1,0 +1,15 @@
+{
+	"value": "https://libssh2.org/download",
+	"type": "apache",
+	"prefix": "libssh2-",
+	"suffix": ".tar.gz",
+	"link": "https://libssh2.org/download/libssh2-1.11.0.tar.gz",
+	"version": "1.11.0",
+	"patchs": {
+		"secfix-1": "https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.0-security_fixes-1.patch"
+	},
+	"files": [
+		"/lib/libssh2.so"
+	],
+	"dependencies": null
+}

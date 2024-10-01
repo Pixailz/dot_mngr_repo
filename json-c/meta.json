@@ -3,8 +3,8 @@
 	"type": "github_tag",
 	"prefix": "json-c-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/json-c/json-c/archive/refs/tags/json-c-0.17-20230812.tar.gz",
-	"version": "0.17",
+	"link": "https://github.com/json-c/json-c/archive/refs/tags/json-c-0.18-20240915.tar.gz",
+	"version": "0.18",
 	"patchs": null,
 	"files": [
 		"/lib/libjson-c.so"

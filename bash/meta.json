@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "bash-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/bash/bash-5.2.32.tar.gz",
-	"version": "5.2.32",
+	"link": "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz",
+	"version": "5.2.37",
 	"patchs": null,
 	"files": [
 		"bash",

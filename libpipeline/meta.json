@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "libpipeline-",
 	"suffix": ".tar.gz",
-	"link": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.7.tar.gz",
-	"version": "1.5.7",
+	"link": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz",
+	"version": "1.5.8",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

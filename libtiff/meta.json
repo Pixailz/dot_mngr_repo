@@ -1,0 +1,33 @@
+{
+	"value": "https://download.osgeo.org/libtiff",
+	"type": "apache",
+	"prefix": "tiff-",
+	"suffix": ".tar.gz",
+	"link": "https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz",
+	"version": "4.7.0",
+	"patchs": null,
+	"files": [
+		"fax2ps",
+		"fax2tiff",
+		"pal2rgb",
+		"ppm2tiff",
+		"raw2tiff",
+		"tiff2bw",
+		"tiff2pdf",
+		"tiff2ps",
+		"tiff2rgba",
+		"tiffcmp",
+		"tiffcp",
+		"tiffcrop",
+		"tiffdither",
+		"tiffdump",
+		"tiffgt",
+		"tiffinfo",
+		"tiffmedian",
+		"tiffset",
+		"tiffsplit",
+		"/lib/libtiff.so",
+		"/lib/libtiffxx.so"
+	],
+	"dependencies": null
+}

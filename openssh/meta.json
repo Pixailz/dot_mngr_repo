@@ -3,8 +3,8 @@
 	"type": "apache_no_sort",
 	"prefix": "openssh-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz",
-	"version": "9.8p1",
+	"link": "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.9p1.tar.gz",
+	"version": "9.9p1",
 	"patchs": null,
 	"files": [
 		"scp",

@@ -1,0 +1,17 @@
+{
+	"value": "https://download.gnome.org/sources/gdk-pixbuf/2.42",
+	"type": "apache",
+	"prefix": "gdk-pixbuf-",
+	"suffix": ".tar.xz",
+	"link": "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz",
+	"version": "2.42.12",
+	"patchs": null,
+	"files": [
+		"gdk-pixbuf-csource",
+		"gdk-pixbuf-pixdata",
+		"gdk-pixbuf-query-loaders",
+		"gdk-pixbuf-thumbnailer",
+		"/lib/libgdk_pixbuf-2.0.so"
+	],
+	"dependencies": null
+}

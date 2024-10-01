@@ -1,0 +1,11 @@
+{
+	"value": "llvm/llvm-project",
+	"type": "github",
+	"prefix": "cmake-",
+	"suffix": ".src.tar.xz",
+	"link": "https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.1/cmake-19.1.1.src.tar.xz",
+	"version": "19.1.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

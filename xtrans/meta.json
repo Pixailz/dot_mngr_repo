@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "xtrans-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/xtrans-1.5.0.tar.xz",
+	"version": "1.5.0",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

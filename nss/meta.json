@@ -3,8 +3,8 @@
 	"type": "fossies_search",
 	"prefix": "nss-",
 	"suffix": ".tar.gz",
-	"link": "https://fossies.org/linux/misc/nss-3.103.tar.gz",
-	"version": "3.103",
+	"link": "https://fossies.org/linux/misc/nss-3.104.tar.gz",
+	"version": "3.104",
 	"patchs": {
 		"nss-3.103-standalone-1": "https://www.linuxfromscratch.org/patches/blfs/svn/nss-3.103-standalone-1.patch"
 	},

@@ -1,0 +1,16 @@
+{
+	"value": "https://github.com/lu-zero/cargo-c/archive/v0.10.4/cargo-c-0.10.4.tar.gz",
+	"type": "no_scrap",
+	"prefix": "cargo-c-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/lu-zero/cargo-c/archive/v0.10.4/cargo-c-0.10.4.tar.gz",
+	"version": "0.10.4",
+	"patchs": null,
+	"files": [
+		"cargo-capi",
+		"cargo-cbuild",
+		"cargo-cinstall",
+		"cargo-ctest"
+	],
+	"dependencies": null
+}

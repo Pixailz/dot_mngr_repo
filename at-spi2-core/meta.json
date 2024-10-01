@@ -1,0 +1,16 @@
+{
+	"value": "https://download.gnome.org/sources/at-spi2-core/2.54",
+	"type": "apache",
+	"prefix": "at-spi2-core-",
+	"suffix": ".tar.xz",
+	"link": "https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz",
+	"version": "2.54.0",
+	"patchs": null,
+	"files": [
+		"/lib/libatk-1.0.so",
+		"/lib/gtk-2.0/modules/libatk-bridge.so",
+		"/lib/libatk-bridge-2.0.so",
+		"/lib/libatspi.so"
+	],
+	"dependencies": null
+}

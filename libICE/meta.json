@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libICE-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libICE-1.1.1.tar.xz",
+	"version": "1.1.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

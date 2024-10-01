@@ -1,0 +1,19 @@
+{
+	"value": "libjpeg-turbo/libjpeg-turbo",
+	"type": "github",
+	"prefix": "libjpeg-turbo-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.0.4/libjpeg-turbo-3.0.4.tar.gz",
+	"version": "3.0.4",
+	"patchs": null,
+	"files": [
+		"cjpeg",
+		"djpeg",
+		"jpegtran",
+		"rdjpgcom",
+		"tjbench",
+		"wrjpgcom",
+		"/lib/libjpeg.so"
+	],
+	"dependencies": null
+}

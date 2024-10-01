@@ -1,0 +1,14 @@
+{
+	"value": "https://download.savannah.gnu.org/releases/freetype",
+	"type": "apache",
+	"prefix": "freetype-",
+	"suffix": ".tar.xz",
+	"link": "https://download.savannah.gnu.org/releases/freetype/freetype-2.13.3.tar.xz",
+	"version": "2.13.3",
+	"patchs": null,
+	"files": [
+		"freetype-config",
+		"/lib/libfreetype.so"
+	],
+	"dependencies": null
+}

@@ -3,9 +3,13 @@
 	"type": "apache",
 	"prefix": "libtool-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/libtool/libtool-2.4.7.tar.gz",
-	"version": "2.4.7",
+	"link": "https://ftp.gnu.org/gnu/libtool/libtool-2.5.3.tar.gz",
+	"version": "2.5.3",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"libtool",
+		"libtoolize",
+		"/lib/libltdl.so"
+	],
 	"dependencies": null
 }

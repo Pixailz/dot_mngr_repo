@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXrender-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXrender-0.9.11.tar.xz",
+	"version": "0.9.11",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

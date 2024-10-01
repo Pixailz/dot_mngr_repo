@@ -1,0 +1,13 @@
+{
+	"value": "https://www.cairographics.org/releases",
+	"type": "apache",
+	"prefix": "pixman-",
+	"suffix": ".tar.gz",
+	"link": "https://www.cairographics.org/releases/pixman-0.43.4.tar.gz",
+	"version": "0.43.4",
+	"patchs": null,
+	"files": [
+		"/lib/libpixman-1.so"
+	],
+	"dependencies": null
+}

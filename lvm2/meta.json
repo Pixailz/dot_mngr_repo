@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "LVM2.",
 	"suffix": ".tgz",
-	"link": "https://sourceware.org/ftp/lvm2/LVM2.2.03.26.tgz",
-	"version": "2.03.26",
+	"link": "https://sourceware.org/ftp/lvm2/LVM2.2.03.27.tgz",
+	"version": "2.03.27",
 	"patchs": null,
 	"files": [
 		"blkdeactivate",

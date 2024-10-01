@@ -1,0 +1,14 @@
+{
+	"value": "silnrsi/graphite",
+	"type": "github",
+	"prefix": "graphite2-",
+	"suffix": ".tgz",
+	"link": "https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz",
+	"version": "1.3.14",
+	"patchs": null,
+	"files": [
+		"gr2fonttest",
+		"/lib/libgraphite2.so"
+	],
+	"dependencies": null
+}

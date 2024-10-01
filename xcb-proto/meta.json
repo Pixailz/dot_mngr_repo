@@ -1,0 +1,13 @@
+{
+	"value": "https://xorg.freedesktop.org/archive/individual/proto",
+	"type": "apache",
+	"prefix": "xcb-proto-",
+	"suffix": ".tar.xz",
+	"link": "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz",
+	"version": "1.17.0",
+	"patchs": null,
+	"files": [
+		"/share/xcb"
+	],
+	"dependencies": null
+}

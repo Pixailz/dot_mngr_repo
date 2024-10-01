@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "openssl-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/openssl/openssl/releases/download/openssl-3.3.1/openssl-3.3.1.tar.gz",
-	"version": "3.3.1",
+	"link": "https://github.com/openssl/openssl/releases/download/openssl-3.4.0-alpha1/openssl-3.4.0-alpha1.tar.gz",
+	"version": "3.4.0-alpha1",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

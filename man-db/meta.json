@@ -3,8 +3,8 @@
 	"type": "apache",
 	"prefix": "man-db-",
 	"suffix": ".tar.xz",
-	"link": "https://download.savannah.gnu.org/releases/man-db/man-db-2.12.1.tar.xz",
-	"version": "2.12.1",
+	"link": "https://download.savannah.gnu.org/releases/man-db/man-db-2.13.0.tar.xz",
+	"version": "2.13.0",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXpm-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXpm-3.5.17.tar.xz",
+	"version": "3.5.17",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

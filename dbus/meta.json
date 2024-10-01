@@ -1,11 +1,22 @@
 {
-	"value": "https://dbus.freedesktop.org/releases/dbus",
-	"type": "apache",
+	"value": "https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz",
+	"type": "no_scrap",
 	"prefix": "dbus-",
 	"suffix": ".tar.xz",
 	"link": "https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz",
 	"version": "1.14.10",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"dbus-cleanup-sockets",
+		"dbus-daemon",
+		"dbus-launch",
+		"dbus-monitor",
+		"dbus-run-session",
+		"dbus-send",
+		"dbus-test-tool",
+		"dbus-update-activation-environment",
+		"dbus-uuidgen",
+		"/lib/libdbus-1.so"
+	],
 	"dependencies": null
 }

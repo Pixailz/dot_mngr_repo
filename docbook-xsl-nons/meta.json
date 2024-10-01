@@ -1,19 +1,16 @@
 {
-	"value": "https://ftp.gnu.org/gnu/autoconf",
-	"type": "apache",
-	"prefix": "autoconf-",
+	"value": " https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.gz",
+	"type": "no_scrap",
+	"prefix": "docbook-xsl-nons-",
 	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz",
-	"version": "2.72",
-	"patchs": null,
+	"link": " https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.gz",
+	"version": "1.79.2",
+	"patchs": {
+		"docbook-xsl-nons-stack_fix-1": "https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-nons-1.79.2-stack_fix-1.patch"
+	},
 	"files": [
-		"autoconf",
-		"autoheader",
-		"autom4te",
-		"autoreconf",
-		"autoscan",
-		"autoupdate",
-		"ifnames"
+		"/share/xml/docbook/xsl-stylesheets-nons-1.79.2",
+		"/share/doc/docbook-xsl-nons-1.79.2"
 	],
 	"dependencies": null
 }

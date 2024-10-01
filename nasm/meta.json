@@ -1,0 +1,14 @@
+{
+	"value": "netwide-assembler/nasm",
+	"type": "github_tag",
+	"prefix": "nasm-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.03.tar.gz",
+	"version": "2.16.03",
+	"patchs": null,
+	"files": [
+		"nasm",
+		"ndisasm"
+	],
+	"dependencies": null
+}

@@ -1,0 +1,16 @@
+{
+	"value": "https://fossies.org/linux/misc/libpng",
+	"type": "fossies",
+	"prefix": "libpng-",
+	"suffix": ".tar.xz",
+	"link": "https://fossies.org/linux/misc/libpng-1.6.44.tar.xz",
+	"version": "1.6.44",
+	"patchs": null,
+	"files": [
+		"pngfix",
+		"png-fix-itxt",
+		"libpng-config",
+		"/lib/libpng.so"
+	],
+	"dependencies": null
+}

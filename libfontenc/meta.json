@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libfontenc-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libfontenc-1.1.8.tar.xz",
+	"version": "1.1.8",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

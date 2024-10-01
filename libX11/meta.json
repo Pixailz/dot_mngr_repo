@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libX11-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libX11-1.8.10.tar.xz",
+	"version": "1.8.10",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

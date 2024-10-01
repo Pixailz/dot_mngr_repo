@@ -3,8 +3,8 @@
 	"type": "github",
 	"prefix": "sysklogd-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/troglobit/sysklogd/releases/download/v2.6.1/sysklogd-2.6.1.tar.gz",
-	"version": "2.6.1",
+	"link": "https://github.com/troglobit/sysklogd/releases/download/v2.6.2/sysklogd-2.6.2.tar.gz",
+	"version": "2.6.2",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

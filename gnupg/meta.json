@@ -3,8 +3,8 @@
 	"type": "website",
 	"prefix": "gnupg-",
 	"suffix": ".tar.bz2",
-	"link": "https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.0.tar.bz2",
-	"version": "2.5.0",
+	"link": "https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.1.tar.bz2",
+	"version": "2.5.1",
 	"patchs": null,
 	"files": [
 		"addgnupghome",

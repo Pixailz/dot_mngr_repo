@@ -3,8 +3,8 @@
 	"type": "apache_no_sort",
 	"prefix": "iproute2-",
 	"suffix": ".tar.gz",
-	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.10.0.tar.gz",
-	"version": "6.10.0",
+	"link": "https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.11.0.tar.gz",
+	"version": "6.11.0",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

@@ -1,10 +1,10 @@
 {
-	"value": "GNOME/libxml2",
-	"type": "github_tag",
+	"value": "https://gitlab.gnome.org/GNOME/libxml2",
+	"type": "gitlab",
 	"prefix": "libxml2-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/GNOME/libxml2/archive/refs/tags/v2.13.3.tar.gz",
-	"version": "2.13.3",
+	"link": "https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.4/libxml2-v2.13.4.tar.gz",
+	"version": "2.13.4",
 	"patchs": null,
 	"files": [
 		"xml2-config",

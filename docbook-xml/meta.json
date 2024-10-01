@@ -2,10 +2,12 @@
 	"value": "https://docbook.org/xml/4.5/docbook-xml-4.5.zip",
 	"type": "no_scrap",
 	"prefix": "docbook-xml-",
-	"suffix": ".tar.gz",
-	"link": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz",
-	"version": "2.72",
+	"suffix": ".zip",
+	"link": "https://docbook.org/xml/4.5/docbook-xml-4.5.zip",
+	"version": "4.5",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"/share/xml/docbook/xml-dtd-4.5"
+	],
 	"dependencies": null
 }

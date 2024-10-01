@@ -1,0 +1,11 @@
+{
+	"value": "https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.43-apng.patch.gz",
+	"type": "no_scrap",
+	"prefix": "libpng-",
+	"suffix": ".patch.gz",
+	"link": "https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.43-apng.patch.gz",
+	"version": "1.6.43-apng",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

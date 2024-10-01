@@ -1,0 +1,11 @@
+{
+	"value": "https://download.savannah.gnu.org/releases/freetype",
+	"type": "apache",
+	"prefix": "freetype-doc-",
+	"suffix": ".tar.xz",
+	"link": "https://download.savannah.gnu.org/releases/freetype/freetype-doc-2.13.3.tar.xz",
+	"version": "2.13.3",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

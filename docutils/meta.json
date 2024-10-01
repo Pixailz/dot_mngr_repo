@@ -1,0 +1,23 @@
+{
+	"value": "https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz",
+	"type": "no_scrap",
+	"prefix": "docutils-",
+	"suffix": ".tar.gz",
+	"link": "https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.21.2.tar.gz",
+	"version": "0.21.2",
+	"patchs": null,
+	"files": [
+		"docutils",
+		"rst2html",
+		"rst2html4",
+		"rst2html5",
+		"rst2latex",
+		"rst2man",
+		"rst2odt",
+		"rst2pseudoxml",
+		"rst2s5",
+		"rst2xetex",
+		"rst2xml"
+	],
+	"dependencies": null
+}

@@ -1,0 +1,16 @@
+{
+	"value": "https://fossies.org/linux/misc/pango",
+	"type": "fossies",
+	"prefix": "pango-",
+	"suffix": ".tar.xz",
+	"link": "https://fossies.org/linux/misc/pango-1.54.0.tar.xz",
+	"version": "1.54.0",
+	"patchs": null,
+	"files": [
+		"pango-list",
+		"pango-segmantation",
+		"pango-view",
+		"/lib/libpango-1.0.so"
+	],
+	"dependencies": null
+}

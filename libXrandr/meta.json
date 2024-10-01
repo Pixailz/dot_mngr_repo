@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXrandr-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXrandr-1.5.4.tar.xz",
+	"version": "1.5.4",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

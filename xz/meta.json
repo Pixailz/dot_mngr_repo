@@ -3,8 +3,8 @@
 	"type": "github",
 	"prefix": "xz-",
 	"suffix": ".tar.xz",
-	"link": "https://github.com/tukaani-project/xz/releases/download/v5.6.2/xz-5.6.2.tar.xz",
-	"version": "5.6.2",
+	"link": "https://github.com/tukaani-project/xz/releases/download/v5.6.3/xz-5.6.3.tar.xz",
+	"version": "5.6.3",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

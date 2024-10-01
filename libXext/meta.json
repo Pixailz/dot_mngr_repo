@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXext-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXext-1.3.6.tar.xz",
+	"version": "1.3.6",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

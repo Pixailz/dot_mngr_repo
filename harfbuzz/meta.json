@@ -1,0 +1,22 @@
+{
+	"value": "harfbuzz/harfbuzz",
+	"type": "github",
+	"prefix": "harfbuzz-",
+	"suffix": ".tar.xz",
+	"link": "https://github.com/harfbuzz/harfbuzz/releases/download/10.0.1/harfbuzz-10.0.1.tar.xz",
+	"version": "10.0.1",
+	"patchs": null,
+	"files": [
+		"hb-info",
+		"hb-ot-shape-closure",
+		"hb-shape",
+		"hb-subset",
+		"hb-view",
+		"/lib/libharfbuzz.so",
+		"/lib/libharfbuzz-cairo.so",
+		"/lib/libharfbuzz-gobject.so",
+		"/lib/libharfbuzz-icu.so",
+		"/lib/libharfbuzz-subset.so"
+	],
+	"dependencies": null
+}

@@ -1,0 +1,13 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXau-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXau-1.0.11.tar.xz",
+	"version": "1.0.11",
+	"patchs": null,
+	"files": [
+		"/lib/libXau.so"
+	],
+	"dependencies": null
+}

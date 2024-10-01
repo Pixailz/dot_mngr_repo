@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXcomposite-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXcomposite-0.4.6.tar.xz",
+	"version": "0.4.6",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

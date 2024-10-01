@@ -3,8 +3,8 @@
 	"type": "website",
 	"prefix": "Python-",
 	"suffix": ".tar.xz",
-	"link": "https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tar.xz",
-	"version": "3.12.5",
+	"link": "https://www.python.org/ftp/python/3.12.7/Python-3.12.7.tar.xz",
+	"version": "3.12.7",
 	"patchs": null,
 	"files": null,
 	"dependencies": null

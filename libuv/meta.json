@@ -3,8 +3,8 @@
 	"type": "github_tag",
 	"prefix": "libarchive-",
 	"suffix": ".tar.gz",
-	"link": "https://github.com/libuv/libuv/archive/refs/tags/v1.48.0.tar.gz",
-	"version": "1.48.0",
+	"link": "https://github.com/libuv/libuv/archive/refs/tags/v1.49.0.tar.gz",
+	"version": "1.49.0",
 	"patchs": null,
 	"files": [
 		"/lib/libuv.so"

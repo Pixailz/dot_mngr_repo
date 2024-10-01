@@ -1,0 +1,14 @@
+{
+	"value": "https://www.freedesktop.org/software/accountsservice",
+	"type": "apache",
+	"prefix": "accountsservice-",
+	"suffix": ".tar.xz",
+	"link": "https://www.freedesktop.org/software/accountsservice/accountsservice-23.13.9.tar.xz",
+	"version": "23.13.9",
+	"patchs": null,
+	"files": [
+		"/libexec/accounts-daemon",
+		"/lib/libaccountsservice.so"
+	],
+	"dependencies": null
+}

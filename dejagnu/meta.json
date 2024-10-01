@@ -6,6 +6,9 @@
 	"link": "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
 	"version": "1.6.3",
 	"patchs": null,
-	"files": null,
+	"files": [
+		"dejagnu",
+		"runtest"
+	],
 	"dependencies": null
 }

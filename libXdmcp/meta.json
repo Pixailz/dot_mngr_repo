@@ -1,0 +1,13 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXdmcp-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXdmcp-1.1.5.tar.xz",
+	"version": "1.1.5",
+	"patchs": null,
+	"files": [
+		"/lib/libXdmcp.so"
+	],
+	"dependencies": null
+}

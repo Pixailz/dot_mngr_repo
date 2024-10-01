@@ -1,0 +1,14 @@
+{
+	"value": "https://www.nasm.us/docs.php",
+	"type": "website",
+	"prefix": "nasm-",
+	"suffix": "-xdoc.tar.gz",
+	"link": "http://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03-xdoc.tar.gz",
+	"version": "2.16.03",
+	"patchs": null,
+	"files": [
+		"nasm",
+		"ndisasm"
+	],
+	"dependencies": null
+}

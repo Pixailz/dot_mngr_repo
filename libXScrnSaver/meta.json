@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXScrnSaver-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXScrnSaver-1.2.4.tar.xz",
+	"version": "1.2.4",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

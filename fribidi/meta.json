@@ -1,0 +1,14 @@
+{
+	"value": "fribidi/fribidi",
+	"type": "github",
+	"prefix": "fribidi-",
+	"suffix": ".tar.xz",
+	"link": "https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz",
+	"version": "1.0.16",
+	"patchs": null,
+	"files": [
+		"fribidi",
+		"/lib/libfribidi.so"
+	],
+	"dependencies": null
+}

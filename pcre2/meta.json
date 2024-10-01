@@ -1,0 +1,19 @@
+{
+	"value": "PhilipHazel/pcre2",
+	"type": "github",
+	"prefix": "pcre2-",
+	"suffix": ".tar.gz",
+	"link": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.44/pcre2-10.44.tar.gz",
+	"version": "10.44",
+	"patchs": null,
+	"files": [
+		"pcre2grep",
+		"pcre2test",
+		"pcre2-config",
+		"/lib/libpcre2-8.so",
+		"/lib/libpcre2-16.so",
+		"/lib/libpcre2-32.so",
+		"/lib/libpcre2-posix.so"
+	],
+	"dependencies": null
+}

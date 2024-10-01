@@ -1,0 +1,13 @@
+{
+	"value": "https://gitlab.freedesktop.org/xdg/shared-mime-info",
+	"type": "gitlab",
+	"prefix": "shared-mime-info-",
+	"suffix": ".tar.gz",
+	"link": "https://gitlab.freedesktop.org/xdg/shared-mime-info/-/archive/2.4/shared-mime-info-2.4.tar.gz",
+	"version": "2.4",
+	"patchs": null,
+	"files": [
+		"update-mime-database"
+	],
+	"dependencies": null
+}

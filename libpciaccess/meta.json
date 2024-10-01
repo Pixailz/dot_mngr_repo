@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libpciaccess-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libpciaccess-0.18.1.tar.xz",
+	"version": "0.18.1",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXfont2-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXfont2-2.0.7.tar.xz",
+	"version": "2.0.7",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

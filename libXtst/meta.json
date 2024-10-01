@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXtst-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXtst-1.2.5.tar.xz",
+	"version": "1.2.5",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

@@ -1,0 +1,15 @@
+{
+	"value": "https://gitlab.gnome.org/GNOME/librsvg",
+	"type": "gitlab",
+	"prefix": "librsvg-",
+	"suffix": ".tar.gz",
+	"link": "https://gitlab.gnome.org/GNOME/librsvg/-/archive/2.58.5/librsvg-2.58.5.tar.gz",
+	"version": "2.58.5",
+	"patchs": null,
+	"files": [
+		"rsvg-convert",
+		"/lib/librsvg-2.so",
+		"/lib/libpixbufloader-svg.so"
+	],
+	"dependencies": null
+}

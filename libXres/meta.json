@@ -1,0 +1,11 @@
+{
+	"value": "https://www.x.org/pub/individual/lib",
+	"type": "apache",
+	"prefix": "libXres-",
+	"suffix": ".tar.xz",
+	"link": "https://www.x.org/pub/individual/lib/libXres-1.2.2.tar.xz",
+	"version": "1.2.2",
+	"patchs": null,
+	"files": null,
+	"dependencies": null
+}

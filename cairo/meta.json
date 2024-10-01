@@ -1,0 +1,16 @@
+{
+	"value": "https://www.cairographics.org/releases",
+	"type": "apache",
+	"prefix": "cairo-",
+	"suffix": ".tar.xz",
+	"link": "https://www.cairographics.org/releases/cairo-1.18.2.tar.xz",
+	"version": "1.18.2",
+	"patchs": null,
+	"files": [
+		"cairo-trace",
+		"/lib/libcairo.so",
+		"/lib/libcairo-gobject.so",
+		"/lib/libcairo-script-interpreter.so"
+	],
+	"dependencies": null
+}
