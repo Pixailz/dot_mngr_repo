@@ -1,0 +1,8 @@
+{
+	"reference": "main@llvm",
+	"dependencies": {
+		"required": [
+			"1_cmake"
+		]
+	}
+}

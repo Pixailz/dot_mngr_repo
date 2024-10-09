@@ -1,0 +1,21 @@
+{
+	"reference": "main@glib",
+	"dependencies": {
+		"required": [
+			"1_at-spi2-core",
+			"1_gdk-pixbuf",
+			"1_libepoxy",
+			"1_pango",
+			"1_adwaita-icon-theme",
+			"1_docbook-xls-nons",
+			"1_hicolor-icon-theme",
+			"1_iso-codes",
+			"1_libxkbcommon",
+			"1_libxslt",
+			"1_sassc",
+			"1_wayland",
+			"1_wayland-protocols",
+			"1_glib"
+		]
+	}
+}

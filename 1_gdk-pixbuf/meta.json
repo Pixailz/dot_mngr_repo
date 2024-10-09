@@ -1,0 +1,14 @@
+{
+	"reference": "main@gdk-pixbuf",
+	"dependencies": {
+		"required": [
+			"1_glib",
+			"1_libjpeg-turbo",
+			"1_libpng",
+			"1_shared-mime-info",
+			"1_docutils",
+			"1_librsvg",
+			"1_libtiff"
+		]
+	}
+}

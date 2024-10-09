@@ -1,0 +1,9 @@
+{
+	"reference": "main@docbook-xsl-nons",
+	"dependencies": {
+		"required": [
+			"1_libxml2",
+			"1_unzip"
+		]
+	}
+}

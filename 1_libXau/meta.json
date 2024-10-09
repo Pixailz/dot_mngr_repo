@@ -1,0 +1,8 @@
+{
+	"reference": "main@libXau",
+	"dependencies": {
+		"required": [
+			"1_xorgproto"
+		]
+	}
+}

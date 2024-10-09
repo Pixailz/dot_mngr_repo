@@ -6,6 +6,7 @@ def configure(self):
 	p.info("pass")
 	self.chroot()
 	p.info(f"{TARGET_TRIPLET = }")
+	self.cmd_run("pwd")
 	# self.add_path(f"{PREFIX}/tools/bin")
 	# self.add_env({
 	# 	"LC_ALL": "POSIX",
@@ -20,4 +21,4 @@ def configure(self):
 	# self.take_build()
 	# print("\nPASS\n")
 
-	# extract_file_from_package("1_tzdata", os.path.join(self.tar_folder, "build"), self.chrooted)
+	# extract_file_from_package("1_tzdata", os.path.join(self.archive_folder, "build"), self.chrooted)

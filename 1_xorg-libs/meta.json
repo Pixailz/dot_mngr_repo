@@ -1,0 +1,10 @@
+{
+	"reference": "main@xorg-libs",
+	"dependencies": {
+		"required": [
+			"1_fontconfig",
+			"1_libxcb",
+			"blfs@1_dbus"
+		]
+	}
+}

@@ -5,7 +5,7 @@ from dot_mngr import *
 def configure(self):
 	download_package(self, "1_linux-pam_doc")
 	self.chroot()
-	linux_pam_doc = get_package_from_name("1_linux-pam_doc")
+	linux_pam_doc = conf.get_package("1_linux-pam_doc")
 	self.cmd_run(
 		 "tar --no-same-owner --strip-components=1"
 		f" -xvf /sources/{linux_pam_doc.file_name}"

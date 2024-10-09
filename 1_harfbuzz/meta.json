@@ -1,0 +1,11 @@
+{
+	"reference": "main@glib",
+	"dependencies": {
+		"required": [
+			"1_glib",
+			"1_graphite2",
+			"1_icu",
+			"1_freetype"
+		]
+	}
+}

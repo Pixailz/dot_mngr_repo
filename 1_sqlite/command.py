@@ -5,7 +5,8 @@ from dot_mngr import *
 def configure(self):
 	download_package(self, "sqlite-doc")
 	self.chroot()
-	sqlite_doc = get_package_from_name("sqlite-doc")
+	sqlite_doc = conf.get_package("sqlite-doc")
+	# sqlite_doc = conf.get_package("sqlite-doc")
 	self.cmd_run(f"unzip -q /sources/{sqlite_doc.file_name}")
 	self.cmd_run(
 		 "./configure"
@@ -23,12 +24,9 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("make install")
-	major = self.version[0]
-	minor = self.version[1:3].rstrip("0")
-	patch = self.version[4:6].rstrip("0")
-	version = f"{major}.{minor}.{patch}"
-	self.cmd_run(f"install -v -m755 -d {PREFIX}/share/doc/sqlite-{version}")
+	ver = self.int2ver()
+	self.cmd_run(f"install -v -m755 -d {PREFIX}/share/doc/sqlite-{ver}")
 	self.cmd_run(
-		 "cp -v -R sqlite-doc-3460100/*"
-		f" {PREFIX}/share/doc/sqlite-{version}"
+		f"cp -v -R sqlite-doc-{self.version}/*"
+		f" {PREFIX}/share/doc/sqlite-{ver}"
 	)

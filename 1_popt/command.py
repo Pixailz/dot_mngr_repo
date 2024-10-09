@@ -4,8 +4,7 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	if not os.path.exists("configure"):
-		self.cmd_run("sh autogen.sh")
+	self.generate_configure()
 	self.cmd_run(
 		 "./configure"
 		f" --prefix={PREFIX}"

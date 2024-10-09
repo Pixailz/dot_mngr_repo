@@ -1,0 +1,12 @@
+{
+	"reference": "main@glib",
+	"dependencies": {
+		"required": [
+			"1_docutils",
+			"1_libxslt",
+			"1_pcre2",
+			"1_shared-mime-info",
+			"1_desktop-file-utils"
+		]
+	}
+}

@@ -6,15 +6,13 @@ def configure(self):
 	self.chroot()
 	self.cmd_run("sed '20,$ d' -i trust/trust-extract-compat")
 	self.cmd_run(
-		f"""
-		cat >> trust/trust-extract-compat <<-EOF
-		# Copy existing anchor modifications to /etc/ssl/local
-		{PREFIX}/libexec/make-ca/copy-trust-modification
-
-		# Updates trust stores
-		{PREFIX}/sbin/make-ca -r
-		EOF
-		"""
+		 "cat >> trust/trust-extract-compat <<EOF\n"
+		 "# Copy existing anchor modifications to /etc/ssl/local\n"
+		f"{PREFIX}/libexec/make-ca/copy-trust-modification\n"
+		 "\n"
+		 "# Updates trust stores\n"
+		f"{PREFIX}/sbin/make-ca -r\n"
+		 "EOF"
 	)
 	Os.take("p11-build")
 	self.cmd_run(

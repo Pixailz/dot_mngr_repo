@@ -1,0 +1,8 @@
+{
+	"reference": "main@gsettings-desktop-schemas",
+	"dependencies": {
+		"required": [
+			"1_glib"
+		]
+	}
+}

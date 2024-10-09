@@ -1,0 +1,9 @@
+{
+	"reference": "main@shared-mime-info",
+	"dependencies": {
+		"required": [
+			"1_glib",
+			"1_libxml2"
+		]
+	}
+}

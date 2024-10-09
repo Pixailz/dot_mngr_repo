@@ -4,7 +4,7 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
-	self.cmd_run("sh autogen.sh")
+	self.generate_configure()
 	self.cmd_run(
 		 "./configure"
 		f" --prefix={PREFIX}"

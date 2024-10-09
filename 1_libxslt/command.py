@@ -4,11 +4,12 @@ from dot_mngr import *
 
 def configure(self):
 	self.chroot()
+	self.generate_configure()
 	self.cmd_run(
 		 "./configure"
 		f" --prefix={PREFIX}"
 		 " --disable-static"
-		f" --docdir={PREFIX}/share/doc/libxml2-{self.version}"
+		f" --docdir={PREFIX}/share/doc/libxslt-{self.version}"
 	)
 
 def compile(self):

@@ -6,7 +6,6 @@
 			"1_duktape",
 			"1_libxslt",
 			"1_linux-pam",
-			"1_systemd",
 			"1_polkit-kernel"
 		]
 	}

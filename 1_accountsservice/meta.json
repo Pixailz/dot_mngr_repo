@@ -1,0 +1,11 @@
+{
+	"reference": "main@accountsservice",
+	"dependencies": {
+		"required": [
+			"1_polkit",
+			"1_glib",
+			"1_systemd",
+			"1_vala"
+		]
+	}
+}

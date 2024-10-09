@@ -1,0 +1,10 @@
+{
+	"reference": "main@libjpeg-turbo",
+	"dependencies": {
+		"required": [
+			"1_cmake",
+			"1_nasm",
+			"1_yasm"
+		]
+	}
+}

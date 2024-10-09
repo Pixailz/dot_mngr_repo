@@ -1,0 +1,10 @@
+{
+	"reference": "main@polkit-gnome",
+	"dependencies": {
+		"required": [
+			"1_accountservice",
+			"1_gtk+",
+			"1_polkit"
+		]
+	}
+}

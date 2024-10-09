@@ -1,0 +1,8 @@
+{
+	"reference": "main@desktop-file-utils",
+	"dependencies": {
+		"required": [
+			"1_glib"
+		]
+	}
+}

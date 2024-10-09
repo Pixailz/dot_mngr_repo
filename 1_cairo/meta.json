@@ -1,0 +1,12 @@
+{
+	"reference": "main@cairo",
+	"dependencies": {
+		"required": [
+			"1_libpng",
+			"1_pixman",
+			"1_fontconfig",
+			"1_glib",
+			"1_xorg-libs"
+		]
+	}
+}

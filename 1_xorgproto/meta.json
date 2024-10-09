@@ -1,0 +1,8 @@
+{
+	"reference": "main@xorgproto",
+	"dependencies": {
+		"required": [
+			"1_util-macros"
+		]
+	}
+}

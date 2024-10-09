@@ -1,0 +1,14 @@
+{
+	"reference": "main@librsvg",
+	"dependencies": {
+		"required": [
+			"1_cairo",
+			"1_cargo-c",
+			"1_gdk-pixbuf",
+			"1_pango",
+			"1_rustc",
+			"1_glib",
+			"1_vala"
+		]
+	}
+}

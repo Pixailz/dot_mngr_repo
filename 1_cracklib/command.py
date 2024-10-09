@@ -21,7 +21,7 @@ def check(self):
 
 def install(self):
 	self.cmd_run("make install")
-	cracklib_word = get_package_from_name("1_cracklib-words")
+	cracklib_word = conf.get_package("1_cracklib-words")
 	self.cmd_run(
 		f"install -v -m644 -D ../{cracklib_word.file_name}"
 		f" {PREFIX}/share/dict/cracklib-words.xz"

@@ -1,0 +1,8 @@
+{
+	"reference": "main@graphite2",
+	"dependencies": {
+		"required": [
+			"1_cmake"
+		]
+	}
+}

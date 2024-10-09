@@ -1,0 +1,12 @@
+{
+	"reference": "main@pango",
+	"dependencies": {
+		"required": [
+			"1_fontconfig",
+			"1_fribidi",
+			"1_glib",
+			"1_cairo",
+			"1_xorg-libs"
+		]
+	}
+}

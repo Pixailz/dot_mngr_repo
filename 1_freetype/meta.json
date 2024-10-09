@@ -1,0 +1,10 @@
+{
+	"reference": "main@freetype",
+	"dependencies": {
+		"required": [
+			"1_harfbuzz",
+			"1_libpng",
+			"1_which"
+		]
+	}
+}

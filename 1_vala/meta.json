@@ -1,0 +1,9 @@
+{
+	"reference": "main@vala",
+	"dependencies": {
+		"required": [
+			"1_glib",
+			"1_graphviz"
+		]
+	}
+}

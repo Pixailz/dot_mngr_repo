@@ -1,0 +1,8 @@
+{
+	"reference": "main@fontconfig",
+	"dependencies": {
+		"required": [
+			"1_freetype"
+		]
+	}
+}

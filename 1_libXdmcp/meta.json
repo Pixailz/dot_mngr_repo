@@ -1,0 +1,8 @@
+{
+	"reference": "main@libXdmcp",
+	"dependencies": {
+		"required": [
+			"1_xorgproto"
+		]
+	}
+}

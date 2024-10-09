@@ -1,0 +1,12 @@
+{
+	"reference": "main@rustc",
+	"dependencies": {
+		"required": [
+			"1_cmake",
+			"1_curl",
+			"1_libssh2",
+			"1_llvm",
+			"1_sqlite"
+		]
+	}
+}

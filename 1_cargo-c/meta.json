@@ -1,0 +1,10 @@
+{
+	"reference": "main@cargo-c",
+	"dependencies": {
+		"required": [
+			"1_rustc",
+			"1_libssh2",
+			"1_sqlite"
+		]
+	}
+}

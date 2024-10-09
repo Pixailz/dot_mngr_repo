@@ -47,10 +47,11 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("ninja install")
-	systemd_man = get_package_from_name("1_systemd-man-pages")
+	systemd_man = conf.get_package("1_systemd-man-pages")
+	systemd_man.prepare_archive(chroot = self.chrooted)
 	self.cmd_run(
 		 "tar --no-same-owner --strip-components=1"
-		f" -xvf /sources/{systemd_man.file_name}"
+		f" -xvf {self.chrooted_get_path(systemd_units.archive_folder, self.chrooted)}"
 		f" -C {PREFIX}/share/man"
 	)
 	self.cmd_run("systemd-machine-id-setup")

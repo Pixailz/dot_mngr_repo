@@ -5,6 +5,7 @@
 	"suffix": ".tar.xz",
 	"link": "https://www.linuxfromscratch.org/lfs/downloads/12.1/lfs-bootscripts-20230728.tar.xz",
 	"version": "20230728",
+	"patchs": null,
 	"files": null,
 	"dependencies": null
 }

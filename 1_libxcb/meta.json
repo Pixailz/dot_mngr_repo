@@ -1,0 +1,10 @@
+{
+	"reference": "main@libxcb",
+	"dependencies": {
+		"required": [
+			"1_libXau",
+			"1_xcb-proto",
+			"1_libXdmcp"
+		]
+	}
+}

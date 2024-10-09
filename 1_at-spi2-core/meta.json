@@ -1,0 +1,11 @@
+{
+	"reference": "main@at-spi2-core",
+	"dependencies": {
+		"required": [
+			"blfs@1_dbus",
+			"1_glib",
+			"1_gsettings-desktop-schemas",
+			"1_xorg-libs"
+		]
+	}
+}
