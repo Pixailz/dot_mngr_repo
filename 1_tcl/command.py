@@ -5,7 +5,7 @@ from dot_mngr import *
 def configure(self):
 	download_package(self, "1_tcl-doc")
 	self.chroot()
-	path = self.chrooted_get_path(self.tar_folder, self.chrooted)
+	path = self.chrooted_get_path(self.archive_folder, self.chrooted)
 	Os.take(os.path.join(path, "unix"))
 	self.cmd_run(
 		f"./configure"
@@ -16,7 +16,7 @@ def configure(self):
 
 def compile(self):
 	self.cmd_run("make")
-	path = self.chrooted_get_path(self.tar_folder, self.chrooted)
+	path = self.chrooted_get_path(self.archive_folder, self.chrooted)
 	self.cmd_run(
 		f"sed -e 's|{path}/unix|{PREFIX}/lib|'"
 		f" -e 's|{path}|{PREFIX}/include|'"
@@ -40,12 +40,12 @@ def check(self):
 	self.cmd_run("make test")
 
 def install(self):
-	path = self.chrooted_get_path(self.tar_folder, self.chrooted)
+	path = self.chrooted_get_path(self.archive_folder, self.chrooted)
 	self.cmd_run("make install")
 	self.cmd_run(f"chmod -v u+w {PREFIX}/lib/libtcl8.6.so")
 	self.cmd_run("make install-private-headers")
 	self.cmd_run(f"ln -sfv tclsh8.6 {PREFIX}/bin/tclsh")
 	self.cmd_run(f"mv {PREFIX}/share/man/man3/" "{Thread,Tcl_Thread}.3")
 	Os.take(path)
-	extract_file_from_package("1_tcl-doc", self.tar_folder, self.chrooted)
+	extract_file_from_package("1_tcl-doc", self.archive_folder, self.chrooted)
 	self.cmd_run(f"mkdir -v -p {PREFIX}/share/doc/tcl-{self.version}")

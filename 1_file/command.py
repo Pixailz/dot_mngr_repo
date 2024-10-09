@@ -16,7 +16,7 @@ def configure(self):
 		 " --disable-xzlib"
 		 " --disable-zlib && make"
 	)
-	self.take_tar_folder()
+	self.take_archive_folder()
 	self.cmd_run(
 		 "./configure"
 		f" --prefix={PREFIX}"
@@ -25,7 +25,7 @@ def configure(self):
 	)
 
 def compile(self):
-	self.cmd_run(f"make FILE_COMPILE={self.tar_folder}/build/src/file")
+	self.cmd_run(f"make FILE_COMPILE={self.archive_folder}/build/src/file")
 
 def install(self):
 	self.cmd_run(f"make DESTDIR={ROOT_PATH} install")

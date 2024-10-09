@@ -8,9 +8,9 @@ def configure(self):
 		"LC_ALL": "POSIX",
 		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
-	extract_file_from_package("1_mpfr", self.tar_folder)
-	extract_file_from_package("1_gmp", self.tar_folder)
-	extract_file_from_package("1_mpc", self.tar_folder)
+	extract_file_from_package("1_mpfr", self.archive_folder)
+	extract_file_from_package("1_gmp", self.archive_folder)
+	extract_file_from_package("1_mpc", self.archive_folder)
 	self.cmd_run("rm -rf mpfr; mv mpfr-* mpfr")
 	self.cmd_run("rm -rf gmp; mv gmp-* gmp")
 	self.cmd_run("rm -rf mpc; mv mpc-* mpc")
@@ -50,7 +50,7 @@ def compile(self):
 
 def install(self):
 	self.cmd_run("make install")
-	self.take_tar_folder()
+	self.take_archive_folder()
 	self.cmd_run(
 		 "cat gcc/limitx.h gcc/glimits.h gcc/limity.h >"
 		f" $(dirname $({TARGET_TRIPLET}-gcc -print-libgcc-file-name))/include/limits.h"

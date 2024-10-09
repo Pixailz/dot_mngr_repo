@@ -26,6 +26,6 @@ def compile(self):
 def install(self):
 	self.cmd_run(f"make DESTDIR={ROOT_PATH} install")
 	self.cmd_run(
-		f" rm -rf {ROOT_PATH}{PREFIX}/lib/lib"
+		f"rm -rf {ROOT_PATH}{PREFIX}/lib/lib"
 		 "{stdc++{,exp,fs},supc++}.la"
 	)

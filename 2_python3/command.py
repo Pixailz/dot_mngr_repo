@@ -23,10 +23,10 @@ def install(self):
 	self.cmd_run("make install")
 	self.cmd_run(f"install -v -dm755 {PREFIX}/share/doc/python-{self.version}/html")
 	python3_doc = get_package_from_name("1_python3-doc")
-	python3_doc.prepare_tarball(chroot=self.chrooted)
+	python3_doc.prepare_archive(chroot=self.chrooted)
 	tar_file = self.chrooted_get_path(python3_doc.file_path, self.chrooted)
 	self.cmd_run(f"tar --no-same-owner -xvf {tar_file}")
 	self.cmd_run(
-		f"cp -R --no-preserve=mode {os.path.basename(python3_doc.tar_folder)}/*"
+		f"cp -R --no-preserve=mode {os.path.basename(python3_doc.archive_folder)}/*"
 		f" {PREFIX}/share/doc/python-{self.version}/html"
 	)

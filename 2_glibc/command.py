@@ -67,7 +67,7 @@ def install(self):
 		 " localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS &&"
 		 " localedef -i zh_TW -f UTF-8 zh_TW.UTF-8"
 	)
-	extract_file_from_package("1_tzdata", os.path.join(self.tar_folder, "build"), self.chrooted)
+	extract_file_from_package("1_tzdata", os.path.join(self.archive_folder, "build"), self.chrooted)
 	self.cmd_run(
 		f"export ZONEINFO={PREFIX}/share/zoneinfo && "
 		 " mkdir -pv ${ZONEINFO}/{posix,right} && "

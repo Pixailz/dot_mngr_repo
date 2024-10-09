@@ -8,9 +8,9 @@ def configure(self):
 		"LC_ALL": "POSIX",
 		"CONFIG_SITE": f"{ROOT_PATH}{PREFIX}/share/config.site"
 	})
-	extract_file_from_package("1_mpfr", self.tar_folder)
-	extract_file_from_package("1_gmp", self.tar_folder)
-	extract_file_from_package("1_mpc", self.tar_folder)
+	extract_file_from_package("1_mpfr", self.archive_folder)
+	extract_file_from_package("1_gmp", self.archive_folder)
+	extract_file_from_package("1_mpc", self.archive_folder)
 	self.cmd_run("rm -rf mpfr; mv mpfr-* mpfr")
 	self.cmd_run("rm -rf gmp; mv gmp-* gmp")
 	self.cmd_run("rm -rf mpc; mv mpc-* mpc")
@@ -30,7 +30,7 @@ def configure(self):
 		 " --build=$(../config.guess)"
 		f" --host={TARGET_TRIPLET}"
 		f" --target={TARGET_TRIPLET}"
-		f" LDFLAGS_FOR_TARGET=-L{self.tar_folder}/build/{TARGET_TRIPLET}/libgcc"
+		f" LDFLAGS_FOR_TARGET=-L{self.archive_folder}/build/{TARGET_TRIPLET}/libgcc"
 		f" --prefix={PREFIX}"
 		f" --with-build-sysroot={ROOT_PATH}"
 		 " --enable-default-pie"
@@ -51,5 +51,4 @@ def compile(self):
 
 def install(self):
 	self.cmd_run(f"make DESTDIR={ROOT_PATH} install")
-	if not os.path.exists(f"{ROOT_PATH}{PREFIX}/bin/cc"):
-		self.cmd_run(f"ln -s gcc {ROOT_PATH}{PREFIX}/bin/cc")
+	self.cmd_run(f"ln -vfs gcc {ROOT_PATH}{PREFIX}/bin/cc")

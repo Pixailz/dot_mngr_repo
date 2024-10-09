@@ -15,7 +15,7 @@ def configure(self):
 		"make -C include && "
 		"make -C progs tic"
 	)
-	self.take_tar_folder()
+	self.take_archive_folder()
 	self.cmd_run(
 		 "./configure"
 		f" --prefix={PREFIX}"
@@ -37,7 +37,7 @@ def compile(self):
 def install(self):
 	self.cmd_run(
 		f"make DESTDIR={ROOT_PATH}"
-		f" TIC_PATH={self.tar_folder}/build/progs/tic install"
+		f" TIC_PATH={self.archive_folder}/build/progs/tic install"
 	)
 	if not os.path.exists(f"{ROOT_PATH}{PREFIX}/lib/libncurses.so"):
 		self.cmd_run(f"ln -s libncursesw.so {ROOT_PATH}{PREFIX}/lib/libncurses.so")
