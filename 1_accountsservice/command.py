@@ -6,7 +6,7 @@ def configure(self):
 	self.chroot()
 	self.cmd_run("mv tests/dbusmock{,-tests}")
 	self.cmd_run(
-		 "sed -e '/accounts_service\.py/s/dbusmock/dbusmock-tests/'"
+		 "sed -e '/accounts_service\\.py/s/dbusmock/dbusmock-tests/'"
 		 " -e 's/assertEquals/assertEqual/'"
 		 " -i tests/test-libaccountsservice.py"
 	)
