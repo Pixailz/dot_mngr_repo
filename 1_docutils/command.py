@@ -12,7 +12,7 @@ def configure(self):
 	)
 	self.cmd_run(
 		f"find {PREFIX}/lib/python3.12/site-packages/ -name 'docutils*'"
-		 " -exec rm -rf {} \; || true"
+		 " -exec rm -rf {} \\; || true"
 	)
 
 def compile(self):

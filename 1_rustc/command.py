@@ -75,7 +75,7 @@ def configure(self):
 		 " -i src/bootstrap/src/lib.rs"
 	)
 	self.cmd_run(
-		 "sed '/CondBitmap/,/^}/s/LLVM_VERSION.*/& \&\& LLVM_VERSION_LT(19, 0)/'"
+		 "sed '/CondBitmap/,/^}/s/LLVM_VERSION.*/& \\&\\& LLVM_VERSION_LT(19, 0)/'"
 		 " -i compiler/rustc_llvm/llvm-wrapper/RustWrapper.cpp"
 	)
 	self.cmd_run("rm -v tests/coverage/mcdc/{cond*,if,inline*,nest*,non_*}.rs")
